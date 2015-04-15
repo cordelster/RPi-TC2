@@ -1,0 +1,15 @@
+2f6b8c3437926801dfa12bf142fe444a  usr/bin/cisco-decrypt
+77a1b21af99dd3234a0fd4d2f32e223a  usr/bin/pcf2vpnc
+326fd52d0326e75551ce62bac924beb8  usr/sbin/vpnc
+20dd7dfdfe4f0816e53dbeaad4d4d6f4  usr/sbin/vpnc-disconnect
+fd855bba1edb5da3703b06b4099adef6  usr/share/doc/vpnc/NEWS.Debian.gz
+65e73c2953f8f7e971c8380b2effd818  usr/share/doc/vpnc/README.Debian
+f98b1e4f81c67478b9160b01077a3817  usr/share/doc/vpnc/README.gz
+adeb033ff076e8f9a112aa8aa07b2a03  usr/share/doc/vpnc/TODO.gz
+0c3b8dee817d1a0c434cf852c3b6081c  usr/share/doc/vpnc/changelog.Debian.gz
+5007ad06bb2bdf45ceca086d12623360  usr/share/doc/vpnc/changelog.gz
+9be57cdf25b76e4fa29d9267d2cbe175  usr/share/doc/vpnc/copyright
+0a1ad28764edc6ed968676cdc43255f9  usr/share/lintian/overrides/vpnc
+b13fece1fac27f6415b6b6fbb89696af  usr/share/man/man1/cisco-decrypt.1.gz
+791984b5987a2b8f4fcdc28cbf762cad  usr/share/man/man1/pcf2vpnc.1.gz
+58b65e3ea00e55d004499748fe9e6292  usr/share/man/man8/vpnc.8.gz

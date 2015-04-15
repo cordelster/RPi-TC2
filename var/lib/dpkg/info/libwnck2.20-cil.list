@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/cli-common
+/usr/share/cli-common/packages.d
+/usr/share/cli-common/packages.d/libwnck2.20-cil.installcligac
+/usr/share/doc
+/usr/share/doc/libwnck2.20-cil
+/usr/share/doc/libwnck2.20-cil/copyright
+/usr/share/doc/libwnck2.20-cil/changelog.gz
+/usr/share/doc/libwnck2.20-cil/changelog.Debian.gz
+/usr/lib
+/usr/lib/cli
+/usr/lib/cli/wnck-sharp-2.20
+/usr/lib/cli/wnck-sharp-2.20/libwncksharpglue-2.so
+/usr/lib/cli/wnck-sharp-2.20/wnck-sharp.dll
+/usr/lib/cli/wnck-sharp-2.20/wnck-sharp.dll.config

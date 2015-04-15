@@ -1,0 +1,15 @@
+5bee7966644863b5448a47b282c426d7  usr/bin/dfbdump
+6121a569be1234ba5b93508498d10480  usr/bin/dfbfx
+f1a38a9cb4981c3c1ae4c3c739ad5994  usr/bin/dfbg
+52898a99c5a721f902b12930a4fb6ab3  usr/bin/dfbinfo
+00e1540501e5808ddb65c5e3660062fe  usr/bin/dfbinput
+3cf7a3105fd42b48cf96fad359b05900  usr/bin/dfbinspector
+1830ef9c757e0b293ecc2d9b61d142cd  usr/bin/dfblayer
+1721db08c97b7fd2108b27905115f663  usr/bin/dfbmaster
+6edda07505d895031cd43e2beaf015d8  usr/bin/dfbpenmount
+ade3eb2667a62f63eb6dd615279f0a76  usr/bin/dfbscreen
+da4d90cbfc2e83d5e7d151b454697a7f  usr/bin/mkdfiff
+229b092c06f9f6baf010bfc0a1998e82  usr/bin/mkdgiff
+919b036daa0925c7a88ef8d098a9fa51  usr/bin/uwmdump
+82d1b7030ea73219c7129991b96d5e4a  usr/share/man/man1/dfbg.1.gz
+e530438968ca103188d3cb237a474ce1  usr/share/man/man5/directfbrc.5.gz

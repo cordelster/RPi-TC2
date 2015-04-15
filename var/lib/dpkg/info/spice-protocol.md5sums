@@ -1,0 +1,17 @@
+a419af246af112baa081ab0ab3541f32  usr/include/spice-1/spice/ipc_ring.h
+9c9d873d6c3772731e327f1b1621e779  usr/include/spice-1/spice/qxl_dev.h
+4e68d302ccf72f82770fb50c448df8cc  usr/include/spice-1/spice/vdi_dev.h
+db9ff4821e461d10f4a786509c05fb10  usr/include/spice-1/spice/foreign_menu_prot.h
+85413b9b84eebd1f2c34309d820a25ba  usr/include/spice-1/spice/controller_prot.h
+cc95c2aea335348522c50068f44f3434  usr/include/spice-1/spice/vd_agent.h
+fbb67bab006eab2c9e8f163f677ea875  usr/include/spice-1/spice/types.h
+153d8331009bcc73d56c90214a2cc000  usr/include/spice-1/spice/qxl_windows.h
+acdb2afd0b803e34beb99554d3432108  usr/include/spice-1/spice/stats.h
+69054ca4e01879ceef3daa2f398181c4  usr/include/spice-1/spice/barrier.h
+b2ec5d5288580efce77120283106c978  usr/include/spice-1/spice/start-packed.h
+1cd7774c0f61790f1f8f6f00ca5f0ce3  usr/include/spice-1/spice/protocol.h
+5c5a632ef40e74e5b29f074f799ac3e9  usr/include/spice-1/spice/error_codes.h
+1cd4c139927fde3fc04650ce0d282d24  usr/include/spice-1/spice/macros.h
+140599cad7294f2149b982d2ef265289  usr/include/spice-1/spice/end-packed.h
+bf1dd0f449ca00c6c3bf279b2fd9c9bd  usr/include/spice-1/spice/enums.h
+5accdbe962cdd3984216ddd92bb112a0  usr/share/pkgconfig/spice-protocol.pc

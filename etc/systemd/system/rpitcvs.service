@@ -1,0 +1,13 @@
+[Unit]
+Description=RPi-TC Startup Video
+DefaultDependencies=no
+After=systemd-readahead-collect.service systemd-readahead-replay.service
+Before=sysinit.target
+ConditionPathIsReadWrite=/proc/sys/
+
+[Service]
+Type=simple
+ExecStart=/etc/init.d/h264.sh
+
+[Install]
+WantedBy=multi-user.target

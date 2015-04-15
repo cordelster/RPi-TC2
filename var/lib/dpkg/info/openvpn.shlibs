@@ -1,0 +1,2 @@
+openvpn-plugin-auth pam openvpn
+openvpn-plugin-down root openvpn

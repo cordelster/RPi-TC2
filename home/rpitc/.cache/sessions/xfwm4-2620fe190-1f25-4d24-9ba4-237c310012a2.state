@@ -1,0 +1,10 @@
+[CLIENT] 0x2800001
+  [RES_NAME] Conky
+  [RES_CLASS] Conky
+  [WM_NAME] Conky (rpitc-fd061ded)
+  [WM_COMMAND] (4) "conky" "-d" "-c" "/home/rpitc/.conkyrc"
+  [GEOMETRY] (1263,-25,662,310)
+  [GEOMETRY-MAXIMIZED] (955,535,10,10)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x8000

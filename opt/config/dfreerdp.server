@@ -1,0 +1,4 @@
+#Add server ip address or fully qualified name, for example: 192.168.0.100 or server.mydomain.local
+#server ip or address must be in one line, remove empty lines!
+#192.168.2.104
+#server.local.lan

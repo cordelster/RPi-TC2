@@ -1,0 +1,40 @@
+#!/bin/bash
+######################################################################
+#                                                                    #
+#  Copyright (c) 2002, 2014 NoMachine, http://www.nomachine.com.     #
+#                                                                    #
+#  All rights reserved.                                              #
+#                                                                    #
+######################################################################
+
+if test -z "$NX_SYSTEM"; then
+
+  RUNDIR="${0%nxplayer}"
+  BINDIR="$(cd "$RUNDIR" && pwd)"
+
+  NX_SYSTEM="${BINDIR%/bin}"
+  export NX_SYSTEM
+
+fi
+
+if test -z "$LD_LIBRARY_PATH" || test "$LD_LIBRARY_PATH" = ":"; then
+
+  LD_LIBRARY_PATH="$NX_SYSTEM/lib"
+
+else
+
+  LD_LIBRARY_PATH="$NX_SYSTEM/lib:$LD_LIBRARY_PATH"
+
+fi
+
+export LD_LIBRARY_PATH
+
+#
+# Removed checking of the heap consistency to prevent the issue
+# with the size allocated by malloc noticed in some glibc versions.
+#
+
+export MALLOC_CHECK_=0
+
+exec "$NX_SYSTEM/bin/nxplayer.bin" "$@"
+

@@ -1,0 +1,4 @@
+/etc/opt/thinlinc/ssh_known_hosts
+/etc/opt/thinlinc/tlclient.conf
+/etc/profile.d/tlclient.csh
+/etc/profile.d/tlclient.sh

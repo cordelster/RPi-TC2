@@ -1,0 +1,274 @@
+#!/bin/bash
+######################################################################
+#                                                                    #
+#  Copyright (c) 2001, 2014 NoMachine, http://www.nomachine.com.     #
+#                                                                    #
+#  All rights reserved.                                              #
+#                                                                    #
+######################################################################
+
+NXROOT="/usr/NX"
+
+if [ ! -d "$NXROOT" ];
+then
+
+  if [ -d "/Applications/NoMachine Service.app/Contents/Frameworks" ];
+  then
+    NXROOT="/Applications/NoMachine Service.app/Contents/Frameworks"
+  elif [ -d "/Applications/NoMachine.app/Contents/Frameworks" ];
+  then
+    NXROOT="/Applications/NoMachine.app/Contents/Frameworks"
+  elif [ -d "/Applications/NoMachine Node.app/Contents/Frameworks" ];
+  then
+    NXROOT="/Applications/NoMachine Node.app/Contents/Frameworks"
+  elif [ -f "/etc/NX/server/localhost/client.cfg" ];
+  then
+    NXROOT=`cat /etc/NX/server/localhost/client.cfg | grep ClientRoot | awk -F \" '{ print $2 }'`
+  elif [ -f "/etc/NX/player/localhost/client.cfg" ];
+  then
+    NXROOT=`cat /etc/NX/player/localhost/client.cfg | grep ClientRoot | awk -F \" '{ print $2 }'`
+  elif [ -f "/etc/NX/node/localhost/client.cfg" ];
+  then
+    NXROOT=`cat /etc/NX/node/localhost/client.cfg | grep ClientRoot | awk -F \" '{ print $2 }'`
+  fi
+
+fi
+
+if [ $# = 0 ]
+then
+  echo "network $(basename $0) \"Unknown\" \"NX Virtual Printing Protocol (nxprint)\""
+  exit 0
+fi
+
+if [ $# -lt 5 ]
+then
+  echo "Usage: $0 job-id user title copies options [file]" 1>&2
+  exit 4
+fi
+
+DEBUG="DEBUG"
+
+echo "$DEBUG: nxprint executed with parameters: $@" 1>&2
+
+NXCLIENT="nxclient"
+HOSTOS="Unknown"
+
+if [ -x "$NXROOT/bin/nxclient" ];
+then
+  NXCLIENT="$NXROOT/bin/nxclient"
+elif [ -x "$NXROOT/nxclient" ];
+then
+  NXCLIENT="$NXROOT/nxclient"
+elif [ -x "$NXROOT/../MacOS/nxclient" ];
+then
+  NXCLIENT="$NXROOT/../MacOS/nxclient"
+fi
+
+if [ -d "$NXROOT/../MacOS" ];
+then
+  HOSTOS="MacOS"
+else
+  HOSTOS="Linux"
+fi
+
+if test ! -x "$NXCLIENT";
+then
+  echo "ERROR: Cannot find transport binary: $NXCLIENT" 1>&2
+  echo "STATE: +timed-out" 1>&2 
+  exit 1
+fi
+
+JOBID=$1
+USER=$2
+TITLE=$3
+COPIES=$4
+OPTIONS=$5
+
+FILE="nxprint-$PRINTER-$JOBID"
+PSFILE="$TMPDIR/$FILE.ps"
+
+echo "$DEBUG: saving temporary postscript file as: $PSFILE" 1>&2
+
+cat - > "$PSFILE"
+
+if test ! -f "$PSFILE";
+then
+  echo "ERROR: Failed to save a temporary postscript file: $PSFILE " 1>&2
+  echo "STATE: +timed-out" 1>&2 
+  exit 1
+fi
+
+NXSESSIONID=`cat "$PSFILE" | grep "%%NXSessionId"| awk -F: '{ print $2 }' | sed '$!d'`
+if [ "x$NXSESSIONID" == "x" ] 
+then
+  echo "ERROR: Variable NXSessionId not found in postscript file: $PSFILE " 1>&2
+  echo "STATE: +timed-out" 1>&2 
+  exit 1
+fi
+
+NXPRINTER=`cat "$PSFILE" | grep "%%NXPrinter"| awk -F# '{ print $2 }' | sed '$!d'`
+
+echo "$DEBUG: NXPRINTER variable: $NXPRINTER" 1>&2
+if [ "x$NXPRINTER" == "x" ] 
+then
+  echo "ERROR: Variable NXPrinter not found in postscript file: $PSFILE " 1>&2
+  echo "STATE: +timed-out" 1>&2 
+  exit 1
+fi
+
+NXPATH=`cat "$PSFILE" | grep "%%NXSessionPath"| awk -F: '{ print $2 }' | sed 's/\\\\/\\\\\\\\/g' | sed '$!d'`
+echo "$DEBUG: NXPATH variable: $NXPATH" 1>&2
+if [ "x$NXPATH" == "x" ] 
+then
+  echo "ERROR: Variable NXPath not found in postscript file: $PSFILE " 1>&2
+  echo "STATE: +timed-out" 1>&2 
+  exit 1
+fi
+
+NXUSER=`cat "$PSFILE" | grep "%%NXSessionUser"| awk -F: '{ print $2 }' | sed 's/\\\\/\\\\\\\\/g' | sed '$!d'`
+echo "$DEBUG: NXUSER variable: $NXUSER" 1>&2
+if [ "x$NXUSER" == "x" ] 
+then
+  echo "ERROR: Variable NXUser not found in postscript file: $PSFILE " 1>&2
+  echo "STATE: +timed-out" 1>&2 
+  exit 1
+fi
+
+USER="$NXUSER"
+
+NXOPTIONS="$NXPATH/options"
+echo "$DEBUG: NX options file: $NXOPTIONS" 1>&2
+
+NXPRINTTMP=""
+
+if [ "$HOSTOS" == "MacOS" ]
+then
+  NXPRINTTMP="/tmp/$NXSESSIONID"
+  echo "$DEBUG: NX print TMP directory: $NXPRINTTMP" 1>&2
+  if test ! -d "$NXPRINTTMP";
+  then
+    OUT2=`mkdir "$NXPRINTTMP"`
+    echo "$DEBUG: NX print TMP create out: $OUT2" 1>&2
+  fi
+else
+  NXPRINTTMP="$NXROOT/var/run/printers/D-$NXSESSIONID"
+  echo "$DEBUG: NX print TMP directory: $NXPRINTTMP" 1>&2
+  if test ! -d "$NXPRINTTMP";
+  then
+    OUT2=`mkdir -p "$NXPRINTTMP"`
+    echo "$DEBUG: NX print TMP create out: $OUT2" 1>&2
+  fi
+fi
+
+chown $USER "$NXPRINTTMP"
+  
+if [ $? != 0 ]
+then
+    echo "ERROR: Failed to change owner of temporary print directory: $NXPRINTTMP " $
+    echo "STATE: +timed-out" 1>&2
+    exit 1
+fi
+
+PDFFILE="$NXPRINTTMP/$FILE.pdf"
+
+echo "$DEBUG: Output PDF file: $PDFFILE" 1>&2
+
+
+GSEXE=`which gs`
+
+if [ "x$GSEXE" = "x" ]
+then
+  echo "$DEBUG: Using pstopdf" 1>&2
+  OUT1=`pstopdf "$PSFILE" -o "$PDFFILE"`
+else
+  echo "$DEBUG: Ghostscript command: gs -q -dCompatibilityLevel=1.4 -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -sOutputFile=\"$PDFFILE\" -dAutoRotatePages=/PageByPage -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFSETTINGS=/prepress -c .setpdfwrite -f \"$PSFILE\"" 1>&2
+  if [ -a /usr/local/bin/gs ]
+  then
+    OUT1=`/usr/local/bin/gs -q -dCompatibilityLevel=1.4 -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -sOutputFile="$PDFFILE" -dAutoRotatePages=/PageByPage -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFSETTINGS=/prepress -c .setpdfwrite -f "$PSFILE" 2>&1`
+  else
+    OUT1=`gs -q -dCompatibilityLevel=1.4 -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -sOutputFile="$PDFFILE" -dAutoRotatePages=/PageByPage -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dPDFSETTINGS=/prepress -c .setpdfwrite -f "$PSFILE" 2>&1`
+  fi
+fi
+echo "$DEBUG: Ghostscript stdout/stderr: $OUT1" 1>&2
+
+if [ $? != 0 ]
+then
+  echo "ERROR: Failed to execute ghostscript converter: $OUT1" 1>&2
+  echo "STATE: +timed-out" 1>&2 
+  exit 1
+fi
+
+rm -f "$PSFILE"
+if [ $? != 0 ]
+then
+  echo "WARNING: Failed to remove temporary postscript file: $PSFILE " 1>&2
+fi
+
+chown $USER "$PDFFILE"
+
+if [ $? != 0 ]
+then
+  echo "ERROR: Failed to change owner of temporary postscript file: $PDFFILE " 1>&2
+  echo "STATE: +timed-out" 1>&2 
+  exit 1
+fi
+
+ENV="NXPRINT_PRINTERNAME=\"$NXPRINTER\" NXPRINT_PAGECOPIES=\"$COPIES\""
+
+QUALITY=`echo "$OPTIONS" | grep -o 'Quality=[a-zA-Z0-9]*' | sed -e 's/Quality=//'` 
+if [ "x$QUALITY" != "x" ] && [ "x$QUALITY" != "x$OPTIONS" ]        
+then
+  ENV="$ENV NXPRINT_PRINTQUALITY=\"$QUALITY\""
+fi
+
+RESOLUTION=`echo "$OPTIONS" | grep -o 'Resolution=[a-zA-Z0-9]*' | sed -e 's/Resolution=//'` 
+if [ "x$RESOLUTION" != "x" ] && [ "x$RESOLUTION" != "x$OPTIONS" ]
+then
+  ENV="$ENV NXPRINT_PRINTRESOLUTION=\"$RESOLUTION\""
+fi
+
+PAGESIZE=`echo "$OPTIONS" | grep -o 'PageSize=[a-zA-Z0-9]*' | sed -e 's/PageSize=//'` 
+if [ "x$PAGESIZE" != "x" ] && [ "x$PAGESIZE" != "x$OPTIONS" ]
+then
+  ENV="$ENV NXPRINT_PAGESIZE=\"$PAGESIZE\""
+fi
+
+MEDIATYPE=`echo "$OPTIONS" | grep -o 'MediaType=[a-zA-Z0-9]*' | sed -e 's/MediaType=//'` 
+if [ "x$MEDIATYPE" != "x" ] && [ "x$MEDIATYPE" != "x$OPTIONS" ]
+then
+  ENV="$ENV NXPRINT_MEDIATYPE=\"$MEDIATYPE\""
+fi
+
+INPUTSLOT=`echo "$OPTIONS" | grep -o 'InputSlot=[a-zA-Z0-9]*' | sed -e 's/InputSlot=//'` 
+if [ "x$INPUTSLOT" != "x" ] && [ "x$INPUTSLOT" != "x$OPTIONS" ]
+then
+  ENV="$ENV NXPRINT_INPUTSLOT=\"$INPUTSLOT\""
+fi
+
+echo "$DEBUG: Environment variables: $ENV" 1>&2
+
+
+ENVFILE="$NXPRINTTMP/$FILE.env"
+
+OUT3=`echo "$ENV" > "$ENVFILE"`
+
+chown $USER "$ENVFILE"
+if [ $? != 0 ]
+then
+  echo "ERROR: Failed to change owner of temporary postscript file: $ENVFILE " 1>&2
+  echo "STATE: +timed-out" 1>&2
+  exit 1
+fi
+
+
+#FIXME
+#if [ $? != 0 ]
+#then
+#  echo "ERROR: Failed to execute nxclient transport: $OUT2" 1>&2
+#  echo "STATE: -connecting-to-device" 1>&2 
+#  echo "STATE: +timed-out" 1>&2 
+#  exit 1
+#fi
+
+echo "$DEBUG: Printing done" 1>&2
+exit 0

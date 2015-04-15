@@ -1,0 +1,4 @@
+deb http://ftp.de.debian.org/debian sid main contrib non-free
+#deb-src http://ftp.debian.org/debian sid main contrib non-free
+deb http://cortexa7.armtc.net/ sid main
+#deb http://archive.raspbian.org/raspbian testing main contrib non-free

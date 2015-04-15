@@ -1,0 +1,8 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=NoMachine Client
+Exec=/usr/NX/bin/nxplayer
+Type=Application
+Icon=/usr/NX/share/icons/48x48/NoMachine-icon.png
+Hidden=true

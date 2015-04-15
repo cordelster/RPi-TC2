@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/systemd-gnome-ask-password-agent
+/usr/bin/systemadm
+/usr/share
+/usr/share/appdata
+/usr/share/appdata/systemadm.appdata.xml
+/usr/share/doc
+/usr/share/doc/systemd-ui
+/usr/share/doc/systemd-ui/changelog.Debian.gz
+/usr/share/doc/systemd-ui/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/systemadm.1.gz
+/usr/share/applications
+/usr/share/applications/systemadm.desktop

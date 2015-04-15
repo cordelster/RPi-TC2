@@ -1,0 +1,6 @@
+cb180b41e2faf31c98c9dc3a80c0b27c  usr/share/doc/vpnc-scripts/README.Debian
+bbb40bb99a37dd6bfe75f8b271cfa6fe  usr/share/doc/vpnc-scripts/changelog.Debian.gz
+1973710d933a629864d30dcf977569df  usr/share/doc/vpnc-scripts/copyright
+26c78a6e9e36d074fb6f1142ed29f5df  usr/share/lintian/overrides/vpnc-scripts
+4f5dd4b2159ab9b719b863b53a68cd02  usr/share/vpnc-scripts/vpnc-script
+a6e72fe8a2a76dab0873f9600c46fd3a  usr/share/vpnc-scripts/vpnc-script-sshd

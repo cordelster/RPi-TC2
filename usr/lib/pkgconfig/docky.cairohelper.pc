@@ -1,0 +1,5 @@
+Name: Docky.CairoHelper
+Description: Docky Cairo helper.
+Version: 0.1
+
+Libs: -r:/usr/lib/docky/Docky.CairoHelper.dll

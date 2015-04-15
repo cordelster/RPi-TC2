@@ -1,0 +1,28 @@
+system=fbdev
+desktop-buffer-mode=auto
+vt-switching
+graphics-vt
+no-deinit-check
+no-motion-compression
+no-translucent-windows
+memcpy=arm
+mode=1920x1080
+depth=16
+pixelformat=RGB16
+dma
+hardware
+cursor
+vsync-none
+no-debug
+no-debugmem
+no-debugshm
+no-trace
+bg-none
+no-decorations
+desktop-buffer-mode=frontonly
+
+#use --direct-flip option in non-fullscreen modes instead 
+#autoflip-window
+
+#comment following to make dfreerdp work on different VT than launched from command line (usually Ctrl+Alt+F7..F12)
+no-vt-switch

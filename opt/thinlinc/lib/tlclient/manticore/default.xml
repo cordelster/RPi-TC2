@@ -1,0 +1,257 @@
+<ManticoreReg>
+  <Namespace name="thinlinc" >
+    <NodeDir name="root" >
+      <NodeDir name="ConnectionType" >
+	<NodeDir name="thinlinc" >
+	  <NodeDir name="authorizations">
+	    <NodeDir name="user">
+	      <NodeKey name="add">
+		<NodeParam name="value">1</NodeParam>
+		<NodeParam name="type">bool</NodeParam>
+		<NodeParam name="regexp">(1|0)</NodeParam>
+	      </NodeKey>
+	      <NodeKey name="general">
+		<NodeParam name="value">1</NodeParam>
+		<NodeParam name="type">bool</NodeParam>
+		<NodeParam name="regexp">(1|0)</NodeParam>
+	      </NodeKey>
+	    </NodeDir>
+	  </NodeDir>
+	  <NodeDir name="gui">
+	    <NodeDir name="ThinLincManager">
+	      <NodeKey name="name">
+		<NodeParam name="value">ThinLincManager</NodeParam>
+		<NodeParam name="type">string</NodeParam>
+		<NodeParam name="regexp"></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="title">
+		<NodeParam name="value">ThinLinc Connection Manager</NodeParam>
+		<NodeParam name="type">string</NodeParam>
+		<NodeParam name="regexp"></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="status">
+		<NodeParam name="value">active</NodeParam>
+		<NodeParam name="type">string</NodeParam>
+		<NodeParam name="regexp">(active|inactive|read-only)</NodeParam>
+	      </NodeKey>
+	      <NodeDir name="widgets">
+		<NodeKey name="label">
+		  <NodeParam name="value">active</NodeParam>
+		  <NodeParam name="type">string</NodeParam>
+		  <NodeParam name="regexp">(active|inactive|read-only)</NodeParam>
+		</NodeKey>
+		<NodeKey name="address">
+		  <NodeParam name="value">active</NodeParam>
+		  <NodeParam name="type">string</NodeParam>
+		  <NodeParam name="regexp">(active|inactive|read-only)</NodeParam>
+		</NodeKey>
+		<NodeKey name="port">
+		  <NodeParam name="value">active</NodeParam>
+		  <NodeParam name="type">string</NodeParam>
+		  <NodeParam name="regexp">(active|inactive|read-only)</NodeParam>
+		</NodeKey>
+		<NodeKey name="fallBackConnection">
+		  <NodeParam name="value">active</NodeParam>
+		  <NodeParam name="type">string</NodeParam>
+		  <NodeParam name="regexp">(active|inactive|read-only)</NodeParam>
+		</NodeKey>	
+		<NodeKey name="waitForNetwork">
+		  <NodeParam name="value">active</NodeParam>
+		  <NodeParam name="type">string</NodeParam>
+		  <NodeParam name="regexp">(active|inactive|read-only)</NodeParam>
+		</NodeKey>
+		<NodeKey name="autoReconnect">
+		  <NodeParam name="value">active</NodeParam>
+		  <NodeParam name="type">string</NodeParam>
+		  <NodeParam name="regexp">(active|inactive|read-only)</NodeParam>
+		</NodeKey>
+		<NodeKey name="autostart">
+		  <NodeParam name="value">active</NodeParam>
+		  <NodeParam name="type">string</NodeParam>
+		  <NodeParam name="regexp">(active|inactive|read-only)</NodeParam>
+		</NodeKey>
+		<NodeKey name="hasDesktopIcon">
+		  <NodeParam name="value">active</NodeParam>
+		  <NodeParam name="type">string</NodeParam>
+		  <NodeParam name="regexp">(active|inactive|read-only)</NodeParam>
+		</NodeKey>
+	      </NodeDir>
+	    </NodeDir>
+	  </NodeDir>
+	  <NodeDir name="coreSettings">
+	    <NodeKey name="label" >
+	      <NodeParam name="value" >ThinLinc</NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="className" >
+	      <NodeParam name="value" >Thinlinc-client</NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="appName" >
+	      <NodeParam name="value" >thinlinc-client</NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="editor" >
+	      <NodeParam name="value" >/opt/thinlinc/lib/tlclient/manticore/tlclient-mgr</NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="generalSettingsEditor" >
+	      <NodeParam name="value" ></NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="wrapperScript" >
+	      <NodeParam name="value" >/opt/thinlinc/lib/tlclient/manticore/tlclient</NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="stopProcess" >
+	      <NodeParam name="value" >kill</NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="icon16Path" >
+	      <NodeParam name="value" >/opt/thinlinc/lib/tlclient/tlclient_16.png</NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="icon32Path" >
+	      <NodeParam name="value" >/opt/thinlinc/lib/tlclient/tlclient_24.png</NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="icon48Path" >
+	      <NodeParam name="value" >/opt/thinlinc/lib/tlclient/tlclient_48.png</NodeParam>
+	      <NodeParam name="type" >string</NodeParam>
+	      <NodeParam name="regexp" ></NodeParam>
+	    </NodeKey>
+	    <NodeKey name="serverRequired">
+	      <NodeDescription>Tells whether a server name/address is unused, optional, or required for this connection type.</NodeDescription>
+	      <NodeParam name="value">optional</NodeParam>
+	      <NodeParam name="type">string</NodeParam>
+	      <NodeParam name="rights"></NodeParam>
+	      <NodeParam name="regexp">(unused|optional|required)</NodeParam>
+	    </NodeKey>
+	  </NodeDir>
+	  <NodeDir name="connections">
+	    <NodeDir name="{UUID}">
+	      <NodeDir name="authorizations">
+		<NodeDir name="user">
+		  <NodeKey name="edit">
+		    <NodeParam name="value">0</NodeParam>
+		    <NodeParam name="type">bool</NodeParam>
+		    <NodeParam name="regexp">(1|0)</NodeParam>
+		  </NodeKey>
+		  <NodeKey name="execution">
+		    <NodeParam name="value">1</NodeParam>
+		    <NodeParam name="type">bool</NodeParam>
+		    <NodeParam name="regexp">(1|0)</NodeParam>
+		  </NodeKey>
+		</NodeDir>
+	      </NodeDir>
+	      <NodeKey name="waitForNetwork">
+		<NodeParam name="value">1</NodeParam>
+		<NodeParam name="type">bool</NodeParam>
+		<NodeParam name="regexp">(1|0)</NodeParam>
+	      </NodeKey>
+	      <NodeKey name="autoReconnect">
+		<NodeParam name="value">0</NodeParam>
+		<NodeParam name="type">bool</NodeParam>
+		<NodeParam name="regexp">(1|0)</NodeParam>
+	      </NodeKey>
+	      <NodeKey name="coord" >
+		<NodeParam name="value" >0,0</NodeParam>
+		<NodeParam name="type" >string</NodeParam>
+		<NodeParam name="regexp" >^\d+,\d+$</NodeParam>
+	      </NodeKey>
+	      <NodeKey name="label" >
+		<NodeParam name="value" >ThinLinc</NodeParam>
+		<NodeParam name="type" >string</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="autostart" >
+		<NodeParam name="value" >1</NodeParam>
+		<NodeParam name="type" >number</NodeParam>
+		<NodeParam name="regexp" >[0-5]</NodeParam>
+	      </NodeKey>
+	      <NodeKey name="address" >
+		<NodeParam name="value" ></NodeParam>
+		<NodeParam name="type" >string</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="port" >
+		<NodeParam name="value" >22</NodeParam>
+		<NodeParam name="type" >number</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="locale" >
+		<NodeParam name="value" ></NodeParam>
+		<NodeParam name="type" >string</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="hasDesktopIcon" >
+		<NodeParam name="value" >0</NodeParam>
+		<NodeParam name="type" >bool</NodeParam>
+		<NodeParam name="regexp" >(0|1)</NodeParam>
+	      </NodeKey>
+	      <NodeDir name="extraEnvValues" >
+		<NodeDir name="{UUID}" >
+		  <NodeKey name="key" >
+		    <NodeParam name="value" ></NodeParam>
+		    <NodeParam name="type" >string</NodeParam>
+		    <NodeParam name="regexp" ></NodeParam>
+		  </NodeKey>
+		  <NodeKey name="value" >
+		    <NodeParam name="value" ></NodeParam>
+		    <NodeParam name="type" >string</NodeParam>
+		    <NodeParam name="regexp" ></NodeParam>
+		  </NodeKey>
+		</NodeDir>
+	      </NodeDir>
+	      <NodeKey name="beforeStartingCommand" >
+		<NodeParam name="value" ></NodeParam>
+		<NodeParam name="type" >string</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="afterStartedCommand" >
+		<NodeParam name="value" ></NodeParam>
+		<NodeParam name="type" >string</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="afterStoppedCommand" >
+		<NodeParam name="value" ></NodeParam>
+		<NodeParam name="type" >string</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="startMode" >
+		<NodeParam name="value" >focus</NodeParam>
+		<NodeParam name="type" >string</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="dependConnectionId" >
+		<NodeParam name="value" ></NodeParam>
+		<NodeParam name="type" >uuid</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="fallBackConnection" >
+		<NodeParam name="value" ></NodeParam>
+		<NodeParam name="type" >uuid</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	      <NodeKey name="connectionEndAction" >
+		<NodeParam name="value" ></NodeParam>
+		<NodeParam name="type" >number</NodeParam>
+		<NodeParam name="regexp" ></NodeParam>
+	      </NodeKey>
+	    </NodeDir>
+	  </NodeDir>
+	</NodeDir>
+      </NodeDir>
+    </NodeDir>
+  </Namespace>
+</ManticoreReg>
+

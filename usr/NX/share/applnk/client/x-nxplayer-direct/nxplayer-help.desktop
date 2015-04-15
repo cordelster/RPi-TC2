@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Comment=Help online
+Exec=konqueror http://www.nomachine.com/help
+Icon=konqueror
+Name=NoMachine Help on the Web
+Type=Application
+Categories=X-nxplayer;

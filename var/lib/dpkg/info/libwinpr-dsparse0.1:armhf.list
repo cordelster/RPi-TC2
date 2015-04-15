@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libwinpr-dsparse0.1
+/usr/share/doc/libwinpr-dsparse0.1/copyright
+/usr/share/doc/libwinpr-dsparse0.1/changelog.gz
+/usr/share/doc/libwinpr-dsparse0.1/changelog.Debian.gz
+/usr/share/doc/libwinpr-dsparse0.1/README
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libwinpr-dsparse.so.0.1.0
+/usr/lib/arm-linux-gnueabihf/libwinpr-dsparse.so.0.1

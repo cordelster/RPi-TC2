@@ -1,0 +1,21 @@
+#!/bin/bash
+######################################################################
+#                                                                    #
+#  Copyright (c) 2002, 2014 NoMachine, http://www.nomachine.com.     #
+#                                                                    #
+#  All rights reserved.                                              #
+#                                                                    #
+######################################################################
+
+RunDir=${0%nxclient}
+BinDir=$(cd "$RunDir" && pwd)
+NXPath=${BinDir%/bin};
+
+LD_LIBRARY_PATH="$NXPath/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH
+
+NX_SYSTEM="$NXPath"
+export NX_SYSTEM
+
+exec "$NXPath/bin/nxclient.bin" "$@"
+

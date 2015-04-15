@@ -1,0 +1,8 @@
+f8b136a83457a0e1f65565828875ecf7  usr/lib/arm-linux-gnueabihf/libpkcs11-helper.so.1.0.0
+8bc2be2e917c6e45c9acb2ee49211ee9  usr/share/doc/libpkcs11-helper1/AUTHORS
+605be50ca1daefdadc95c39328ccfa72  usr/share/doc/libpkcs11-helper1/README
+05c02cf1b1de0ee6e958917ef33456fb  usr/share/doc/libpkcs11-helper1/THANKS
+e3be553972f17dc38d04e55eec929f24  usr/share/doc/libpkcs11-helper1/changelog.Debian.gz
+2dcef00cac1aed766e81c105f038ff4e  usr/share/doc/libpkcs11-helper1/changelog.gz
+e757e961dd2e1362b0734fa3770f3cf2  usr/share/doc/libpkcs11-helper1/copyright
+65c3f5d37699aff363ec60a1fdc6d628  usr/share/man/man8/pkcs11-helper-1.8.gz

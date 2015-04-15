@@ -1,0 +1,24 @@
+use_xft yes
+xftfont 123:size=8
+xftalpha 0.1
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_hints below
+update_interval 5
+double_buffer yes
+alignment top_right
+gap_x 0
+gap_y -20
+minimum_size 630 300
+maximum_width 800
+total_run_times 0
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale yes
+
+TEXT
+${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font GE Inspira:pixelsize=58}${offset -148}${time %A}${font}
+${voffset 10}${offset 10}${font Ubuntu:pixelsize=10}${color FFA300}HD ${offset 9}$color${fs_free /} / ${fs_size /}${offset 30}${color FFA300}RAM ${offset 9}$color$mem / $memmax${offset 30}${color FFA300}CPU ${offset 9}$color${cpu cpu0}%${offset 30}${color FFA300}IP ${offset 9}$color${if_up wlan0}${addr wlan0}${endif}${if_up eth0}${addr eth0}${endif}${if_up eth1}${addr eth1}${endif}${offset 30}${color FFA300}MAC ${offset 9}$color${if_up eth0}${execi 99999 cat /sys/class/net/eth0/address }${endif}${if_up eth1}${execi 99999 cat /sys/class/net/eth1/address }${endif}${if_up wlan0}${execi 99999 cat /sys/class/net/wlan0/address }${endif}
+

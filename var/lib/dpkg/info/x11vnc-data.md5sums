@@ -1,0 +1,15 @@
+0f087b74a7a28aa6a86ebf5194be02a8  usr/share/doc/x11vnc-data/changelog.Debian.gz
+1de6076ec6265697190c2a7dd1c9cadb  usr/share/doc/x11vnc-data/changelog.gz
+be70aaf8e2be2f14097e0ab711db3348  usr/share/doc/x11vnc-data/copyright
+bba212e9ebcdcaa1ee6262f0465a10ff  usr/share/x11vnc/classes/VncViewer.jar
+276b38378e34c9999c7f96a2d5eb54f2  usr/share/x11vnc/classes/index.vnc
+0a552493ed3879f3729ef66233a0a042  usr/share/x11vnc/classes/ssl/README
+e6f6c4183b85419ddf19dfe4c25d6188  usr/share/x11vnc/classes/ssl/SignedUltraViewerSSL.jar
+d2b35fdf68e23a9cfb1296a165f5fecd  usr/share/x11vnc/classes/ssl/SignedVncViewer.jar
+51f281f5fb54fd5bd17d4ac74174e7c7  usr/share/x11vnc/classes/ssl/UltraViewerSSL.jar
+2c0122434122ab2dda83e98e7139c665  usr/share/x11vnc/classes/ssl/VncViewer.jar
+276b38378e34c9999c7f96a2d5eb54f2  usr/share/x11vnc/classes/ssl/index.vnc
+f009cb09e5dc4711fd87d458dbcbf1d9  usr/share/x11vnc/classes/ssl/proxy.vnc
+b4b4f3307771e96848916d782085e618  usr/share/x11vnc/classes/ssl/ss_vncviewer
+776754fcde49ffa6a0426e43fc633676  usr/share/x11vnc/classes/ssl/ultra.vnc
+5764fe33c8fa829e0b3cc8934f668d80  usr/share/x11vnc/classes/ssl/ultrasigned.vnc

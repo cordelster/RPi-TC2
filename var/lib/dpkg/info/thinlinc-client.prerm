@@ -1,0 +1,35 @@
+#!/bin/sh
+
+# These scripts were designed for RPM so arguments need to be
+# adjusted to work with dpkg.
+
+case $1 in
+    "remove")
+        set 0
+        ;;
+    "upgrade")
+        set 1
+        ;;
+    *)
+        exit 1
+        ;;
+esac
+
+# Only on uninstall, not on upgrades. Files not included in the new version will be left behind.
+if [ x"$1" = x"0" ]; then
+    # Some distributions aren't consistent in what these are set to, so clear them
+    unset XDG_CONFIG_DIRS XDG_DATA_DIRS
+    export PATH=$PATH:/opt/thinlinc/lib/tlclient/xdg-utils
+    xdg-desktop-menu uninstall /opt/thinlinc/lib/tlclient/thinlinc-client.desktop
+    xdg-icon-resource uninstall --noupdate --size 16 --context apps      thinlinc-client
+    xdg-icon-resource uninstall --noupdate --size 16 --context mimetypes application-vnd.cendio.thinlinc.clientconf
+    xdg-icon-resource uninstall --noupdate --size 24 --context apps      thinlinc-client
+    xdg-icon-resource uninstall --noupdate --size 24 --context mimetypes application-vnd.cendio.thinlinc.clientconf
+    xdg-icon-resource uninstall --noupdate --size 48 --context apps      thinlinc-client
+    xdg-icon-resource uninstall --noupdate --size 48 --context mimetypes application-vnd.cendio.thinlinc.clientconf
+    rm -f /usr/share/icons/hicolor/scalable/apps/thinlinc-client.svg
+    xdg-icon-resource forceupdate
+    xdg-mime uninstall /opt/thinlinc/lib/tlclient/thinlinc-client-mime.xml
+    # Manticore (HP) support
+    rm -rf /usr/share/manticore/plugins/thinlinc
+fi

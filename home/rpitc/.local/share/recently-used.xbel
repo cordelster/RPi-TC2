@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///usr/bin/remmina" added="2015-03-11T12:05:58Z" modified="2015-04-08T13:59:06Z" visited="2015-03-11T12:05:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Iceweasel" exec="&apos;iceweasel %u&apos;" modified="2015-04-08T13:59:06Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rpitc/.gconf/apps/docky-2/Docky/Interface/DockPreferences/Dock1/%25gconf.xml" added="2015-03-11T12:34:56Z" modified="2015-03-22T10:23:01Z" visited="2015-03-11T12:34:56Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-03-22T10:23:01Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/applications/xFreeRDP.desktop" added="2015-03-11T15:47:07Z" modified="2015-03-30T20:29:20Z" visited="2015-03-11T15:47:07Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-03-30T20:29:20Z" count="7"/>
+          <bookmark:application name="xfce4-session-settings" exec="&apos;xfce4-session-settings %u&apos;" modified="2015-03-30T19:52:13Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/applications/RDesktop.desktop" added="2015-03-11T15:47:52Z" modified="2015-03-30T19:46:23Z" visited="2015-03-11T15:47:52Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-03-30T19:46:23Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/Apps-xorg-icon.png" added="2015-03-22T10:20:37Z" modified="2015-03-22T10:20:38Z" visited="2015-03-22T10:20:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Iceweasel" exec="&apos;iceweasel %u&apos;" modified="2015-03-22T10:20:38Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/pixmaps/mousepad.xpm" added="2015-03-22T10:27:52Z" modified="2015-04-14T16:40:43Z" visited="2015-03-22T10:27:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/x-xpixmap"/>
+        <bookmark:applications>
+          <bookmark:application name="alacarte" exec="&apos;alacarte %u&apos;" modified="2015-04-14T16:40:43Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/applications/Xephyr.desktop" added="2015-03-22T10:28:00Z" modified="2015-04-08T12:34:59Z" visited="2015-03-22T10:28:00Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-04-08T12:34:59Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="spice://192.168.2.102:5930" added="2015-03-24T18:52:20Z" modified="2015-03-24T18:52:20Z" visited="2015-03-24T18:52:20Z">
+    <title>spice://192.168.2.102:5930</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-spice"/>
+        <bookmark:applications>
+          <bookmark:application name="remote-viewer" exec="&apos;remote-viewer %u&apos;" modified="2015-03-24T18:52:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="spice://192.168.2.102:5920" added="2015-03-24T18:58:45Z" modified="2015-03-24T19:00:28Z" visited="2015-03-24T18:58:45Z">
+    <title>spice://192.168.2.102:5920</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-spice"/>
+        <bookmark:applications>
+          <bookmark:application name="remote-viewer" exec="&apos;remote-viewer %u&apos;" modified="2015-03-24T19:00:28Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="spice://192.168.2.102:5910" added="2015-03-24T19:08:29Z" modified="2015-03-24T19:08:29Z" visited="2015-03-24T19:08:29Z">
+    <title>spice://192.168.2.102:5910</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-spice"/>
+        <bookmark:applications>
+          <bookmark:application name="remote-viewer" exec="&apos;remote-viewer %u&apos;" modified="2015-03-24T19:08:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rpitc/.gconf/apps/docky-2/Docky/Interface/DockPreferences/Dock2/%25gconf.xml" added="2015-03-28T19:01:58Z" modified="2015-03-28T19:01:58Z" visited="2015-03-28T19:01:58Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-03-28T19:01:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/applications/dFreeRDP.desktop" added="2015-03-30T19:45:42Z" modified="2015-04-08T16:36:09Z" visited="2015-03-30T19:45:43Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-04-08T16:36:09Z" count="2"/>
+          <bookmark:application name="xfce4-session-settings" exec="&apos;xfce4-session-settings %u&apos;" modified="2015-03-30T20:07:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/applications/selfservice.desktop" added="2015-03-30T20:21:50Z" modified="2015-03-30T20:21:50Z" visited="2015-03-30T20:21:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-desktop"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-session-settings" exec="&apos;xfce4-session-settings %u&apos;" modified="2015-03-30T20:21:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/numlockselector.sh" added="2015-04-08T13:28:35Z" modified="2015-04-08T13:28:35Z" visited="2015-04-08T13:28:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="alacarte" exec="&apos;alacarte %u&apos;" modified="2015-04-08T13:28:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/pippo.rdp" added="2015-04-08T13:59:11Z" modified="2015-04-08T13:59:50Z" visited="2015-04-08T13:59:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Iceweasel" exec="&apos;iceweasel %u&apos;" modified="2015-04-08T13:59:50Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/applications/vmware-horizon.desktop" added="2015-04-08T16:31:35Z" modified="2015-04-08T16:31:35Z" visited="2015-04-08T16:31:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-desktop"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-session-settings" exec="&apos;xfce4-session-settings %u&apos;" modified="2015-04-08T16:31:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/keepmeup.sh" added="2015-04-08T16:34:35Z" modified="2015-04-08T16:34:35Z" visited="2015-04-08T16:34:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-session-settings" exec="&apos;xfce4-session-settings %u&apos;" modified="2015-04-08T16:34:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/graphics" added="2015-04-10T17:10:39Z" modified="2015-04-10T17:10:39Z" visited="2015-04-10T17:10:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="xfdesktop-settings" exec="&apos;xfdesktop-settings %u&apos;" modified="2015-04-10T17:10:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/config/xfreerdp.config" added="2015-04-10T17:18:30Z" modified="2015-04-14T15:55:25Z" visited="2015-04-10T17:18:30Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="alacarte" exec="&apos;alacarte %u&apos;" modified="2015-04-10T17:18:30Z" count="1"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-04-14T15:55:25Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/config/rdesktop.config" added="2015-04-10T17:19:32Z" modified="2015-04-10T17:28:31Z" visited="2015-04-10T17:19:33Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="alacarte" exec="&apos;alacarte %u&apos;" modified="2015-04-10T17:19:32Z" count="1"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-04-10T17:28:31Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/config/dfreerdp.config" added="2015-04-10T17:20:43Z" modified="2015-04-14T16:52:09Z" visited="2015-04-10T17:20:43Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="alacarte" exec="&apos;alacarte %u&apos;" modified="2015-04-10T17:20:43Z" count="1"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-04-14T16:52:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/config/xephyr.config" added="2015-04-10T17:21:39Z" modified="2015-04-10T17:28:48Z" visited="2015-04-10T17:21:40Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="alacarte" exec="&apos;alacarte %u&apos;" modified="2015-04-10T17:21:39Z" count="1"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-04-10T17:28:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/scripts/vncpasswdchanger.sh" added="2015-04-10T17:31:24Z" modified="2015-04-10T17:31:24Z" visited="2015-04-10T17:31:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="alacarte" exec="&apos;alacarte %u&apos;" modified="2015-04-10T17:31:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/scripts/killintro.sh" added="2015-04-10T17:34:47Z" modified="2015-04-10T17:34:47Z" visited="2015-04-10T17:34:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-session-settings" exec="&apos;xfce4-session-settings %u&apos;" modified="2015-04-10T17:34:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/1.png" added="2015-04-14T07:02:33Z" modified="2015-04-14T07:02:33Z" visited="2015-04-14T07:02:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-screenshooter" exec="&apos;xfce4-screenshooter %u&apos;" modified="2015-04-14T07:02:33Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///etc/X11/Xsession.d/55numlockx" added="2015-04-14T16:29:00Z" modified="2015-04-14T16:29:00Z" visited="2015-04-14T16:29:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xfce4-session-settings" exec="&apos;xfce4-session-settings %u&apos;" modified="2015-04-14T16:29:00Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/config/dfreerdp.server" added="2015-04-14T16:41:21Z" modified="2015-04-14T17:21:51Z" visited="2015-04-14T16:41:21Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-04-14T17:21:51Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/config/rdesktop.server" added="2015-04-14T16:50:35Z" modified="2015-04-14T16:50:35Z" visited="2015-04-14T16:50:35Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-04-14T16:50:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///opt/config/xfreerdp.server" added="2015-04-14T17:21:42Z" modified="2015-04-14T17:21:42Z" visited="2015-04-14T17:21:42Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2015-04-14T17:21:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

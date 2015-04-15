@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=Edit xFreeRDP server
+Exec=mousepad /opt/config/xfreerdp.server
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

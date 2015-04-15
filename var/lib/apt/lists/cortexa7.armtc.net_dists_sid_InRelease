@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Origin: Gibbio
+Label: RPi-TC 2 ARMv7 Cortex A7
+Codename: sid
+Date: Tue, 14 Apr 2015 13:55:03 UTC
+Architectures: armhf
+Components: main
+Description: Raspberry Pi Thin Client project ARMv7 Cortex A7 package
+MD5Sum:
+ b2a6877c52713c8666caf3dec025e7c3 205973 main/binary-armhf/Packages
+ 66877195e0d80da1db516e0e88c284a6 38741 main/binary-armhf/Packages.gz
+ 7af61dd6b378812480ac1c16e3ac52ec 153 main/binary-armhf/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
+ ff96c37b8a81cb7b37dd2836b646a127 154 main/source/Release
+SHA1:
+ a988ff0e276d34f3d68fa20a1331e493e4b0c0cb 205973 main/binary-armhf/Packages
+ ebbff04b9f07d6026979dd1e293959b237ae5b31 38741 main/binary-armhf/Packages.gz
+ 17c431b4e583aac07bec88a353593f349f9d42aa 153 main/binary-armhf/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
+ 821a85e528508321813badd6aa7e93f4adf12215 154 main/source/Release
+SHA256:
+ eca9fcfa76386d07527ff7b5dc5fe0a9e05c4869d3e186b54553a2beaf77c1a8 205973 main/binary-armhf/Packages
+ 6e684903e6d57c689cacb5db18411c07633e7064ca99aa0e45f776dd12d6bcb3 38741 main/binary-armhf/Packages.gz
+ 8a56f1ad414ccea9966102a3fa3cf9de9a45ea2d3298c74d8b0a12143b232a92 153 main/binary-armhf/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
+ 4955894dfe4faf5993b0ffe2f23d3ee065ec605cbb8e7a7c6267ed584638f69d 154 main/source/Release
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJVLRw6AAoJEGiIsU04JvlJdzYH/RDoBeljr6xTWMxkdDg/Em4v
+XEDSj799Mei4ruq8O217aqvl1QgbXFPW6K3V7HEUnnx3lsOvvSQAy9xSNKcMvMjG
+/Ae4p2mTTr4rGlqWx4khGy/7N0B0GBbizzK+kX/B61n5JNVYbfPXF0VLzvfDdX8K
+9ZbUYujzJBxP2hSQwSQ/Efx7ldJrbQfW91NTRyrCbQQQ0dt2COWvC5BLDW70L21O
+6OlnVTSDyr36JJsQ86wH8WU41p6QTMhcm/QLxDRiyR61yba0C+yuRL/oFveQHnNf
+X2qohGJi/z3+kH2Bi4Wz5fXIUOymJf4FGsdA6w7LRTHHo+OtHPOgPOedU1NK1pA=
+=J2Gc
+-----END PGP SIGNATURE-----

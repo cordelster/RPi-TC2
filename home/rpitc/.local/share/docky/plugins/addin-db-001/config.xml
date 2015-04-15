@@ -1,0 +1,7 @@
+<Configuration>
+  <AddinStatus>
+    <Addin id="Docky.Mounter,1.0" enabled="True" />
+    <Addin id="Docky.Trash,1.0" enabled="False" />
+    <Addin id="Docky.Desktop,1.0" enabled="True" />
+  </AddinStatus>
+</Configuration>

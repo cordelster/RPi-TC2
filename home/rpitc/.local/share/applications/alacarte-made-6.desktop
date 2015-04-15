@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=true
+Name=Configure local language
+Exec=sudo dpkg-reconfigure locales
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

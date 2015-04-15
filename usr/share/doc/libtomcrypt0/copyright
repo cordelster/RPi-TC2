@@ -1,0 +1,19 @@
+This package was debianized by Michael Stapelberg <michael@stapelberg.de> on
+Wed, 03 Jun 2009 18:47:05 +0200.
+
+It was downloaded from http://code.stapelberg.de/mirror/libtom.org/libtomcrypt.com_80/
+
+Copyright:
+
+    Copyright (C) 2003-2007 Tom St Denis <tomstdenis@gmail.com>
+
+License:
+
+    Public Domain
+
+The Debian packaging is:
+
+    Copyright (C) 2009 Michael Stapelberg <michael@stapelberg.de>
+
+and is licensed under the GPL version 3, 
+see `/usr/share/common-licenses/GPL-3'.

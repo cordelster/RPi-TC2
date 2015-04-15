@@ -1,0 +1,9 @@
+prefix=/usr
+includedir=${prefix}/include
+
+Name: spice-protocol
+Description: SPICE protocol headers
+Version: 0.12.7
+
+Libs:
+Cflags: -I${includedir}/spice-1

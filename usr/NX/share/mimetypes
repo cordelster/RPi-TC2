@@ -1,0 +1,38 @@
+# Format:
+#   mime extension converter
+# Where:
+#   mime - a mime type of file to print
+#   extension - a extension of file to print, failback option if mime cannot be recognized
+#   converter - a command (or commands) used to convert a file to print into pdf file
+# Variables:
+#   1$ - input file, 2$ - output file
+
+# Basic converters
+
+#text/plain		.txt	enscript $1 -q -p - | ps2pdf - $2
+#text/x-shellscript	.sh	enscript $1 -q -p - | ps2pdf - $2
+application/postscript .ps ps2pdf $1 $2
+#image/gif		.gif	convert $1 $2
+#image/jpeg		.jpeg	convert $1 $2
+#image/jpeg		.jpg	convert $1 $2
+#image/png		.png	convert $1 $2
+#image/bmp		.bmp	convert $1 $2
+
+
+# OpenOffice converters
+# require OpenOffice instance executed in background:
+# ooffice -nologo -nodefault "-accept=socket,host=localhost,port=2002;urp;StarOffice.ComponentContext"
+
+#text/rtf					.rtf	unoconv -f pdf --stdout $1 > $2
+#text/html					.html	unoconv -f pdf --stdout $1 > $2
+#application/vnd.oasis.opendocument.text 	.odt	unoconv -f pdf --stdout $1 > $2
+#application/msword 				.doc	unoconv -f pdf --stdout $1 > $2
+#application/vnd.sun.xml.writer 			.sxw	unoconv -f pdf --stdout $1 > $2
+#application/vnd.oasis.opendocument.spreadsheet	.ods	unoconv -f pdf --stdout $1 > $2
+#application/vnd.ms-office			.xls	unoconv -f pdf --stdout $1 > $2
+#application/xml					.xml	unoconv -f pdf --stdout $1 > $2
+#application/zip					.docx	unoconv -f pdf --stdout $1 > $2
+#application/zip					.xlsx	unoconv -f pdf --stdout $1 > $2
+
+# more will come
+

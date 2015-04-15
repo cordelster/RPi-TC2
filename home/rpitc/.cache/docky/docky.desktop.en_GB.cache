@@ -1,0 +1,1772 @@
+[/usr/share/applications/2XSession.desktop]
+Encoding=UTF-8
+Name=2XSession
+GenericName=2XClient Session
+Exec=/opt/2X/Client/bin/appserverclient -i %f
+Icon=/usr/share/pixmaps/2X.png
+Type=Application
+MimeType=application/x-2xa;
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/2xclient.desktop]
+Encoding=UTF-8
+Name=2XClient
+Exec=/opt/2X/Client/bin/2XClient
+Icon=/usr/share/pixmaps/2X.png
+Type=Application
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/RDesktop.desktop]
+Encoding=UTF-8
+Name=RDesktop
+Exec=/opt/scripts/rdesktop.sh
+Icon=/usr/share/pixmap/rdesktop.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/alacarte.desktop]
+Name=Main Menu
+Comment=Add or remove applications from the main menu
+Exec=alacarte
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;Settings;DesktopSettings;Utility;
+NotShowIn=KDE;
+Icon=alacarte
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=alacarte
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.11.91
+
+[/usr/share/applications/dFreeRDP.desktop]
+Encoding=UTF-8
+Name=dFreeRDP FB Accelerated
+Exec=sudo /opt/scripts/dfreerdp.sh
+Icon=/usr/share/pixmap/freerdp.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/debian-uxterm.desktop]
+Name=UXTerm
+#GenericName=Terminal
+Comment=standard terminal emulator for the X window system
+Exec=uxterm
+Terminal=false
+Type=Application
+#Encoding=UTF-8
+Icon=xterm-color
+Categories=System;TerminalEmulator;Utility;
+X-Desktop-File-Install-Version=0.22
+
+[/usr/share/applications/debian-xterm.desktop]
+Name=XTerm
+#GenericName=Terminal
+Comment=standard terminal emulator for the X window system
+Exec=xterm
+Terminal=false
+Type=Application
+#Encoding=UTF-8
+Icon=xterm-color
+Categories=System;TerminalEmulator;Utility;
+X-Desktop-File-Install-Version=0.22
+
+[/usr/share/applications/docky.desktop]
+Name=Docky
+Type=Application
+Exec=docky
+Terminal=false
+Icon=docky
+Comment=The finest dock no money can buy.
+NoDisplay=false
+Categories=Utility;
+
+[/usr/share/applications/exo-file-manager.desktop]
+Version=1.0
+Type=Application
+Exec=exo-open --launch FileManager %u
+Icon=system-file-manager
+StartupNotify=true
+Terminal=false
+Categories=Utility;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+X-XFCE-MimeType=inode/directory;x-scheme-handler/trash;
+Name=File Manager
+Comment=Browse the file system
+
+[/usr/share/applications/exo-mail-reader.desktop]
+Version=1.0
+Type=Application
+Exec=exo-open --launch MailReader %u
+Icon=internet-mail
+StartupNotify=true
+Terminal=false
+Categories=Network;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+X-XFCE-MimeType=x-scheme-handler/mailto;
+Name=Mail Reader
+Comment=Read your email
+
+[/usr/share/applications/exo-preferred-applications.desktop]
+Version=1.0
+Exec=exo-preferred-applications
+Icon=preferences-desktop-default-applications
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+OnlyShowIn=XFCE;
+Terminal=false
+StartupNotify=true
+Name=Preferred Applications
+Comment=Preferred Applications (Web Browser, Mail Reader and Terminal Emulator)
+X-XfcePluggable=true
+X-XfceHelpComponent=exo
+X-XfceHelpPage=preferred-applications
+
+[/usr/share/applications/exo-terminal-emulator.desktop]
+Version=1.0
+Type=Application
+Exec=exo-open --launch TerminalEmulator
+Icon=utilities-terminal
+StartupNotify=true
+Terminal=false
+Categories=Utility;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Terminal Emulator
+Comment=Use the command line
+
+[/usr/share/applications/exo-web-browser.desktop]
+Version=1.0
+Type=Application
+Exec=exo-open --launch WebBrowser %u
+Icon=web-browser
+StartupNotify=true
+Terminal=false
+Categories=Network;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+X-XFCE-MimeType=x-scheme-handler/http;x-scheme-handler/https;
+Name=Web Browser
+Comment=Browse the web
+
+[/usr/share/applications/iceweasel.desktop]
+Encoding=UTF-8
+Name=Iceweasel
+Comment=Browse the World Wide Web
+GenericName=Web Browser
+X-GNOME-FullName=Iceweasel Web Browser
+Exec=iceweasel %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=iceweasel
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+StartupWMClass=Iceweasel
+StartupNotify=true
+
+[/usr/share/applications/mono-runtime-common.desktop]
+Name=Mono Runtime
+Exec=mono
+Terminal=false
+Type=Application
+Icon=mono-runtime-common
+MimeType=application/x-ms-dos-executable;
+NoDisplay=true
+
+[/usr/share/applications/mono-runtime-terminal.desktop]
+Name=Mono Runtime (Terminal)
+Exec=mono
+Terminal=true
+Type=Application
+Icon=mono-runtime-common
+MimeType=application/x-ms-dos-executable;
+NoDisplay=true
+
+[/usr/share/applications/nm-applet.desktop]
+Name=Network
+Comment=Manage your network connections
+Icon=nm-device-wireless
+Exec=nm-applet
+Terminal=false
+Type=Application
+NoDisplay=true
+NotShowIn=KDE;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=NetworkManager
+X-GNOME-Bugzilla-Component=nm-applet
+X-GNOME-UsesNotifications=true
+
+[/usr/share/applications/nm-connection-editor.desktop]
+Name=Network Connections
+Comment=Manage and change your network connection settings
+Icon=preferences-system-network
+Exec=sudo nm-connection-editor
+Terminal=false
+StartupNotify=true
+Type=Application
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=NetworkManager
+X-GNOME-Bugzilla-Component=nm-connection-editor
+Categories=GNOME;GTK;Settings;X-GNOME-NetworkSettings;
+NotShowIn=KDE;
+
+[/usr/share/applications/pavucontrol.desktop]
+Version=1.0
+Encoding=UTF-8
+Name=PulseAudio Volume Control
+GenericName=Volume Control
+Comment=Adjust the volume level
+Exec=pavucontrol
+Icon=multimedia-volume-control
+StartupNotify=true
+Type=Application
+Categories=AudioVideo;Audio;Mixer;GTK;
+
+[/usr/share/applications/python2.7.desktop]
+Name=Python (v2.7)
+Comment=Python Interpreter (v2.7)
+Exec=/usr/bin/python2.7
+Icon=/usr/share/pixmaps/python2.7.xpm
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true
+
+[/usr/share/applications/python3.4.desktop]
+Name=Python (v3.4)
+Comment=Python Interpreter (v3.4)
+Exec=/usr/bin/python3.4
+Icon=/usr/share/pixmaps/python3.4.xpm
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true
+
+[/usr/share/applications/remote-viewer.desktop]
+Name=Remote Viewer
+Comment=Access remote desktops
+Exec=remote-viewer %u
+Type=Application
+Terminal=false
+MimeType=x-scheme-handler/spice;application/x-virt-viewer;
+StartupNotify=true
+Categories=GNOME;GTK;Network;RemoteAccess;
+Icon=virt-viewer
+
+[/usr/share/applications/thinlinc-client.desktop]
+Version=1.0
+Encoding=UTF-8
+Name=ThinLinc Client
+Comment=Connect to a ThinLinc server
+TryExec=/opt/thinlinc/bin/tlclient-openconf
+Exec=/opt/thinlinc/bin/tlclient-openconf %f
+Icon=thinlinc-client
+Terminal=false
+Type=Application
+Categories=Application;Network;RemoteAccess;
+StartupNotify=false
+MimeType=application/vnd.cendio.thinlinc.clientconf;
+
+[/usr/share/applications/tuxclient.desktop]
+Encoding=UTF-8
+Name=appserverclient
+Exec=/opt/2X/Client/bin/appserverclient --url-schema "%u"
+Icon=/usr/share/pixmaps/2X.png
+Type=Application
+MimeType=x-scheme-handler/tuxclient;
+Terminal=false
+StartupNotify=true
+NoDisplay=true
+Categories=Application;Network;
+
+[/usr/share/applications/vmware-horizon.desktop]
+Encoding=UTF-8
+Name=VMWare Horizon
+Exec=vmware-view
+Icon=/usr/share/pixmap/vmware-view.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/wpa_gui.desktop]
+Version=1.0
+Name=wpa_gui
+Comment=Graphical user interface for wpa_supplicant
+Exec=/usr/sbin/wpa_gui
+Icon=wpa_gui
+GenericName=wpa_supplicant user interface
+Terminal=false
+Type=Application
+Categories=Qt;Network;
+Keywords=wlan;wifi;configuration;
+
+[/usr/share/applications/x11vnc.desktop]
+Name=X11VNC Server
+Comment=Share this desktop by VNC
+Exec=x11vnc -gui tray=setpass -rfbport PROMPT -bg -o %%HOME/.x11vnc.log.%%VNCDISPLAY
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+#StartupWMClass=x11vnc_port_prompt
+Categories=Network;RemoteAccess;
+
+[/usr/share/applications/x2goclient.desktop]
+Version=1.0
+Type=Application
+Name=X2Go Client
+Exec=x2goclient
+Icon=x2goclient
+StartupWMClass=x2goclient
+X-Window-Icon=x2goclient
+X-HildonDesk-ShowInToolbar=true
+X-Osso-Type=application/x-executable
+Terminal=false
+Categories=Qt;KDE;Network;
+Keywords=Terminal,Client,Remote,Desktop,Published,Applications,Session,Profile;
+
+[/usr/share/applications/xFreeRDP.desktop]
+Encoding=UTF-8
+Name=xFreeRDP
+Exec=/opt/scripts/xfreerdp.sh
+Icon=/usr/share/pixmap/freerdp.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/xfce-backdrop-settings.desktop]
+Version=1.0
+Name=Desktop 
+Comment=Set desktop background and menu and icon behaviour
+Exec=xfdesktop-settings
+Icon=preferences-desktop-wallpaper
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+OnlyShowIn=XFCE;
+StartupNotify=true
+X-XfcePluggable=true
+X-XfceHelpComponent=xfdesktop
+X-XfceHelpPage=start
+X-XfceHelpVersion=4.12
+
+[/usr/share/applications/xfce-display-settings.desktop]
+Version=1.0
+Name=Display
+Comment=Configure screen settings and layout
+Exec=xfce4-display-settings
+Icon=video-display
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=display
+
+[/usr/share/applications/xfce-keyboard-settings.desktop]
+Version=1.0
+Name=Keyboard
+Comment=Edit keyboard settings and application shortcuts
+Exec=xfce4-keyboard-settings
+Icon=preferences-desktop-keyboard
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=keyboard
+
+[/usr/share/applications/xfce-mouse-settings.desktop]
+Version=1.0
+Name=Mouse and Touchpad
+Comment=Configure pointer device behaviour and appearance
+Exec=xfce4-mouse-settings
+Icon=preferences-desktop-peripherals
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=mouse
+
+[/usr/share/applications/xfce-session-settings.desktop]
+Name=Session and Startup
+Comment=Customise desktop startup and splash screen
+Exec=xfce4-session-settings
+Icon=xfce4-session
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpComponent=xfce4-session
+X-XfceHelpPage=preferences
+
+[/usr/share/applications/xfce-settings-manager.desktop]
+Name=Settings Manager
+Comment=Graphical Settings Manager for Xfce 4
+Exec=xfce4-settings-manager
+Icon=preferences-desktop
+Terminal=false
+Type=Application
+Categories=X-XFCE;Settings;DesktopSettings;
+OnlyShowIn=XFCE;
+X-XfceSettingsManagerHidden=true
+
+[/usr/share/applications/xfce-ui-settings.desktop]
+Version=1.0
+Name=Appearance
+Comment=Customise the look of your desktop
+Exec=xfce4-appearance-settings
+Icon=preferences-desktop-theme
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=appearance
+
+[/usr/share/applications/xfce-wm-settings.desktop]
+Version=1.0
+Name=Window Manager
+Comment=Configure window behaviour and shortcuts
+Exec=xfwm4-settings
+Icon=xfwm4
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpComponent=xfwm4
+X-XfceHelpPage=preferences
+
+[/usr/share/applications/xfce-wmtweaks-settings.desktop]
+Version=1.0
+Name=Window Manager Tweaks
+Comment=Fine-tune window behaviour and effects
+Exec=xfwm4-tweaks-settings
+Icon=wmtweaks
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpComponent=xfwm4
+X-XfceHelpPage=wmtweaks
+
+[/usr/share/applications/xfce-workspaces-settings.desktop]
+Version=1.0
+Name=Workspaces
+Comment=Configure layout, names and margins
+Exec=xfwm4-workspace-settings
+Icon=xfce4-workspaces
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpComponent=xfwm4
+X-XfceHelpPage=workspaces
+
+[/usr/share/applications/xfce4-accessibility-settings.desktop]
+Version=1.0
+Name=Accessibility
+Comment=Improve keyboard and mouse accessibility
+Exec=xfce4-accessibility-settings
+Icon=preferences-desktop-accessibility
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=accessibility
+
+[/usr/share/applications/xfce4-mime-settings.desktop]
+Version=1.0
+Name=MIME Type Editor
+Comment=Associate applications with MIME types
+Exec=xfce4-mime-settings
+Icon=application-x-executable
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+
+[/usr/share/applications/xfce4-notifyd-config.desktop]
+Version=1.0
+Name=Notifications
+Comment=Customise how notifications appear on your screen
+Exec=xfce4-notifyd-config
+Icon=xfce4-notifyd
+Terminal=false
+StartupNotify=true
+Type=Application
+OnlyShowIn=XFCE;
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+X-XfcePluggable=true
+
+[/usr/share/applications/xfce4-session-logout.desktop]
+Version=1.0
+Type=Application
+Exec=xfce4-session-logout
+Icon=system-log-out
+StartupNotify=false
+Terminal=false
+Categories=System;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Log Out
+Comment=Log out of the Xfce Desktop
+
+[/usr/share/applications/xfce4-settings-editor.desktop]
+Name=Settings Editor
+Comment=Graphical settings editor for Xfconf
+Exec=xfce4-settings-editor
+Icon=preferences-system
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;
+OnlyShowIn=XFCE;
+X-XfceSettingsManagerHidden=true
+
+[/usr/share/applications/xfce4-terminal.desktop]
+Version=1.0
+Name=Xfce Terminal
+Comment=Terminal Emulator
+GenericName=Terminal Emulator
+Exec=xfce4-terminal
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=GTK;System;TerminalEmulator;
+StartupNotify=true
+
+[/usr/share/applications/2XSession.desktop]
+Encoding=UTF-8
+Name=2XSession
+GenericName=2XClient Session
+Exec=/opt/2X/Client/bin/appserverclient -i %f
+Icon=/usr/share/pixmaps/2X.png
+Type=Application
+MimeType=application/x-2xa;
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/2xclient.desktop]
+Encoding=UTF-8
+Name=2XClient
+Exec=/opt/2X/Client/bin/2XClient
+Icon=/usr/share/pixmaps/2X.png
+Type=Application
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/RDesktop.desktop]
+Encoding=UTF-8
+Name=RDesktop
+Exec=/opt/scripts/rdesktop.sh
+Icon=/usr/share/pixmap/rdesktop.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/alacarte.desktop]
+Name=Main Menu
+Comment=Add or remove applications from the main menu
+Exec=alacarte
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;Settings;DesktopSettings;Utility;
+NotShowIn=KDE;
+Icon=alacarte
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=alacarte
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.11.91
+
+[/usr/share/applications/dFreeRDP.desktop]
+Encoding=UTF-8
+Name=dFreeRDP FB Accelerated
+Exec=sudo /opt/scripts/dfreerdp.sh
+Icon=/usr/share/pixmap/freerdp.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/debian-uxterm.desktop]
+Name=UXTerm
+#GenericName=Terminal
+Comment=standard terminal emulator for the X window system
+Exec=uxterm
+Terminal=false
+Type=Application
+#Encoding=UTF-8
+Icon=xterm-color
+Categories=System;TerminalEmulator;Utility;
+X-Desktop-File-Install-Version=0.22
+
+[/usr/share/applications/debian-xterm.desktop]
+Name=XTerm
+#GenericName=Terminal
+Comment=standard terminal emulator for the X window system
+Exec=xterm
+Terminal=false
+Type=Application
+#Encoding=UTF-8
+Icon=xterm-color
+Categories=System;TerminalEmulator;Utility;
+X-Desktop-File-Install-Version=0.22
+
+[/usr/share/applications/docky.desktop]
+Name=Docky
+Type=Application
+Exec=docky
+Terminal=false
+Icon=docky
+Comment=The finest dock no money can buy.
+NoDisplay=false
+Categories=Utility;
+
+[/usr/share/applications/exo-file-manager.desktop]
+Version=1.0
+Type=Application
+Exec=exo-open --launch FileManager %u
+Icon=system-file-manager
+StartupNotify=true
+Terminal=false
+Categories=Utility;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+X-XFCE-MimeType=inode/directory;x-scheme-handler/trash;
+Name=File Manager
+Comment=Browse the file system
+
+[/usr/share/applications/exo-mail-reader.desktop]
+Version=1.0
+Type=Application
+Exec=exo-open --launch MailReader %u
+Icon=internet-mail
+StartupNotify=true
+Terminal=false
+Categories=Network;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+X-XFCE-MimeType=x-scheme-handler/mailto;
+Name=Mail Reader
+Comment=Read your email
+
+[/usr/share/applications/exo-preferred-applications.desktop]
+Version=1.0
+Exec=exo-preferred-applications
+Icon=preferences-desktop-default-applications
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+OnlyShowIn=XFCE;
+Terminal=false
+StartupNotify=true
+Name=Preferred Applications
+Comment=Preferred Applications (Web Browser, Mail Reader and Terminal Emulator)
+X-XfcePluggable=true
+X-XfceHelpComponent=exo
+X-XfceHelpPage=preferred-applications
+
+[/usr/share/applications/exo-terminal-emulator.desktop]
+Version=1.0
+Type=Application
+Exec=exo-open --launch TerminalEmulator
+Icon=utilities-terminal
+StartupNotify=true
+Terminal=false
+Categories=Utility;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Terminal Emulator
+Comment=Use the command line
+
+[/usr/share/applications/exo-web-browser.desktop]
+Version=1.0
+Type=Application
+Exec=exo-open --launch WebBrowser %u
+Icon=web-browser
+StartupNotify=true
+Terminal=false
+Categories=Network;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+X-XFCE-MimeType=x-scheme-handler/http;x-scheme-handler/https;
+Name=Web Browser
+Comment=Browse the web
+
+[/usr/share/applications/iceweasel.desktop]
+Encoding=UTF-8
+Name=Iceweasel
+Comment=Browse the World Wide Web
+GenericName=Web Browser
+X-GNOME-FullName=Iceweasel Web Browser
+Exec=iceweasel %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=iceweasel
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+StartupWMClass=Iceweasel
+StartupNotify=true
+
+[/usr/share/applications/mono-runtime-common.desktop]
+Name=Mono Runtime
+Exec=mono
+Terminal=false
+Type=Application
+Icon=mono-runtime-common
+MimeType=application/x-ms-dos-executable;
+NoDisplay=true
+
+[/usr/share/applications/mono-runtime-terminal.desktop]
+Name=Mono Runtime (Terminal)
+Exec=mono
+Terminal=true
+Type=Application
+Icon=mono-runtime-common
+MimeType=application/x-ms-dos-executable;
+NoDisplay=true
+
+[/usr/share/applications/nm-applet.desktop]
+Name=Network
+Comment=Manage your network connections
+Icon=nm-device-wireless
+Exec=nm-applet
+Terminal=false
+Type=Application
+NoDisplay=true
+NotShowIn=KDE;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=NetworkManager
+X-GNOME-Bugzilla-Component=nm-applet
+X-GNOME-UsesNotifications=true
+
+[/usr/share/applications/nm-connection-editor.desktop]
+Name=Network Connections
+Comment=Manage and change your network connection settings
+Icon=preferences-system-network
+Exec=sudo nm-connection-editor
+Terminal=false
+StartupNotify=true
+Type=Application
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=NetworkManager
+X-GNOME-Bugzilla-Component=nm-connection-editor
+Categories=GNOME;GTK;Settings;X-GNOME-NetworkSettings;
+NotShowIn=KDE;
+
+[/usr/share/applications/pavucontrol.desktop]
+Version=1.0
+Encoding=UTF-8
+Name=PulseAudio Volume Control
+GenericName=Volume Control
+Comment=Adjust the volume level
+Exec=pavucontrol
+Icon=multimedia-volume-control
+StartupNotify=true
+Type=Application
+Categories=AudioVideo;Audio;Mixer;GTK;
+
+[/usr/share/applications/python2.7.desktop]
+Name=Python (v2.7)
+Comment=Python Interpreter (v2.7)
+Exec=/usr/bin/python2.7
+Icon=/usr/share/pixmaps/python2.7.xpm
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true
+
+[/usr/share/applications/python3.4.desktop]
+Name=Python (v3.4)
+Comment=Python Interpreter (v3.4)
+Exec=/usr/bin/python3.4
+Icon=/usr/share/pixmaps/python3.4.xpm
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true
+
+[/usr/share/applications/remote-viewer.desktop]
+Name=Remote Viewer
+Comment=Access remote desktops
+Exec=remote-viewer %u
+Type=Application
+Terminal=false
+MimeType=x-scheme-handler/spice;application/x-virt-viewer;
+StartupNotify=true
+Categories=GNOME;GTK;Network;RemoteAccess;
+Icon=virt-viewer
+
+[/usr/share/applications/thinlinc-client.desktop]
+Version=1.0
+Encoding=UTF-8
+Name=ThinLinc Client
+Comment=Connect to a ThinLinc server
+TryExec=/opt/thinlinc/bin/tlclient-openconf
+Exec=/opt/thinlinc/bin/tlclient-openconf %f
+Icon=thinlinc-client
+Terminal=false
+Type=Application
+Categories=Application;Network;RemoteAccess;
+StartupNotify=false
+MimeType=application/vnd.cendio.thinlinc.clientconf;
+
+[/usr/share/applications/tuxclient.desktop]
+Encoding=UTF-8
+Name=appserverclient
+Exec=/opt/2X/Client/bin/appserverclient --url-schema "%u"
+Icon=/usr/share/pixmaps/2X.png
+Type=Application
+MimeType=x-scheme-handler/tuxclient;
+Terminal=false
+StartupNotify=true
+NoDisplay=true
+Categories=Application;Network;
+
+[/usr/share/applications/vmware-horizon.desktop]
+Encoding=UTF-8
+Name=VMWare Horizon
+Exec=vmware-view
+Icon=/usr/share/pixmap/vmware-view.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/wpa_gui.desktop]
+Version=1.0
+Name=wpa_gui
+Comment=Graphical user interface for wpa_supplicant
+Exec=/usr/sbin/wpa_gui
+Icon=wpa_gui
+GenericName=wpa_supplicant user interface
+Terminal=false
+Type=Application
+Categories=Qt;Network;
+Keywords=wlan;wifi;configuration;
+
+[/usr/share/applications/x11vnc.desktop]
+Name=X11VNC Server
+Comment=Share this desktop by VNC
+Exec=x11vnc -gui tray=setpass -rfbport PROMPT -bg -o %%HOME/.x11vnc.log.%%VNCDISPLAY
+Icon=computer
+Terminal=false
+Type=Application
+StartupNotify=false
+#StartupWMClass=x11vnc_port_prompt
+Categories=Network;RemoteAccess;
+
+[/usr/share/applications/x2goclient.desktop]
+Version=1.0
+Type=Application
+Name=X2Go Client
+Exec=x2goclient
+Icon=x2goclient
+StartupWMClass=x2goclient
+X-Window-Icon=x2goclient
+X-HildonDesk-ShowInToolbar=true
+X-Osso-Type=application/x-executable
+Terminal=false
+Categories=Qt;KDE;Network;
+Keywords=Terminal,Client,Remote,Desktop,Published,Applications,Session,Profile;
+
+[/usr/share/applications/xFreeRDP.desktop]
+Encoding=UTF-8
+Name=xFreeRDP
+Exec=/opt/scripts/xfreerdp.sh
+Icon=/usr/share/pixmap/freerdp.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/xfce-backdrop-settings.desktop]
+Version=1.0
+Name=Desktop 
+Comment=Set desktop background and menu and icon behaviour
+Exec=xfdesktop-settings
+Icon=preferences-desktop-wallpaper
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+OnlyShowIn=XFCE;
+StartupNotify=true
+X-XfcePluggable=true
+X-XfceHelpComponent=xfdesktop
+X-XfceHelpPage=start
+X-XfceHelpVersion=4.12
+
+[/usr/share/applications/xfce-display-settings.desktop]
+Version=1.0
+Name=Display
+Comment=Configure screen settings and layout
+Exec=xfce4-display-settings
+Icon=video-display
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=display
+
+[/usr/share/applications/xfce-keyboard-settings.desktop]
+Version=1.0
+Name=Keyboard
+Comment=Edit keyboard settings and application shortcuts
+Exec=xfce4-keyboard-settings
+Icon=preferences-desktop-keyboard
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=keyboard
+
+[/usr/share/applications/xfce-mouse-settings.desktop]
+Version=1.0
+Name=Mouse and Touchpad
+Comment=Configure pointer device behaviour and appearance
+Exec=xfce4-mouse-settings
+Icon=preferences-desktop-peripherals
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=mouse
+
+[/usr/share/applications/xfce-session-settings.desktop]
+Name=Session and Startup
+Comment=Customise desktop startup and splash screen
+Exec=xfce4-session-settings
+Icon=xfce4-session
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpComponent=xfce4-session
+X-XfceHelpPage=preferences
+
+[/usr/share/applications/xfce-settings-manager.desktop]
+Name=Settings Manager
+Comment=Graphical Settings Manager for Xfce 4
+Exec=xfce4-settings-manager
+Icon=preferences-desktop
+Terminal=false
+Type=Application
+Categories=X-XFCE;Settings;DesktopSettings;
+OnlyShowIn=XFCE;
+X-XfceSettingsManagerHidden=true
+
+[/usr/share/applications/xfce-ui-settings.desktop]
+Version=1.0
+Name=Appearance
+Comment=Customise the look of your desktop
+Exec=xfce4-appearance-settings
+Icon=preferences-desktop-theme
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=appearance
+
+[/usr/share/applications/xfce-wm-settings.desktop]
+Version=1.0
+Name=Window Manager
+Comment=Configure window behaviour and shortcuts
+Exec=xfwm4-settings
+Icon=xfwm4
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpComponent=xfwm4
+X-XfceHelpPage=preferences
+
+[/usr/share/applications/xfce-wmtweaks-settings.desktop]
+Version=1.0
+Name=Window Manager Tweaks
+Comment=Fine-tune window behaviour and effects
+Exec=xfwm4-tweaks-settings
+Icon=wmtweaks
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpComponent=xfwm4
+X-XfceHelpPage=wmtweaks
+
+[/usr/share/applications/xfce-workspaces-settings.desktop]
+Version=1.0
+Name=Workspaces
+Comment=Configure layout, names and margins
+Exec=xfwm4-workspace-settings
+Icon=xfce4-workspaces
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpComponent=xfwm4
+X-XfceHelpPage=workspaces
+
+[/usr/share/applications/xfce4-accessibility-settings.desktop]
+Version=1.0
+Name=Accessibility
+Comment=Improve keyboard and mouse accessibility
+Exec=xfce4-accessibility-settings
+Icon=preferences-desktop-accessibility
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=accessibility
+
+[/usr/share/applications/xfce4-mime-settings.desktop]
+Version=1.0
+Name=MIME Type Editor
+Comment=Associate applications with MIME types
+Exec=xfce4-mime-settings
+Icon=application-x-executable
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+
+[/usr/share/applications/xfce4-notifyd-config.desktop]
+Version=1.0
+Name=Notifications
+Comment=Customise how notifications appear on your screen
+Exec=xfce4-notifyd-config
+Icon=xfce4-notifyd
+Terminal=false
+StartupNotify=true
+Type=Application
+OnlyShowIn=XFCE;
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+X-XfcePluggable=true
+
+[/usr/share/applications/xfce4-session-logout.desktop]
+Version=1.0
+Type=Application
+Exec=xfce4-session-logout
+Icon=system-log-out
+StartupNotify=false
+Terminal=false
+Categories=System;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Log Out
+Comment=Log out of the Xfce Desktop
+
+[/usr/share/applications/xfce4-settings-editor.desktop]
+Name=Settings Editor
+Comment=Graphical settings editor for Xfconf
+Exec=xfce4-settings-editor
+Icon=preferences-system
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;
+OnlyShowIn=XFCE;
+X-XfceSettingsManagerHidden=true
+
+[/usr/share/applications/xfce4-terminal.desktop]
+Version=1.0
+Name=Xfce Terminal
+Comment=Terminal Emulator
+GenericName=Terminal Emulator
+Exec=xfce4-terminal
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=GTK;System;TerminalEmulator;
+StartupNotify=true
+
+[/home/rpitc/.local/share/applications/alacarte-made-1.desktop]
+Terminal=false
+Name=Edit dFreeRDP cmd line
+Exec=mousepad /usr/share/applications/dFreeRDP.desktop
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+Hidden=true
+
+[/home/rpitc/.local/share/applications/alacarte-made-2.desktop]
+Terminal=false
+Name=Edit RDesktop config
+Exec=mousepad /opt/config/rdesktop.config
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-3.desktop]
+Terminal=false
+Name=Edit left menu
+Exec=mousepad /home/rpitc/.gconf/apps/docky-2/Docky/Interface/DockPreferences/Dock1/%%gconf.xml
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-4.desktop]
+Terminal=false
+Name=Edit right menu
+Exec=mousepad /home/rpitc/.gconf/apps/docky-2/Docky/Interface/DockPreferences/Dock2/%%gconf.xml
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-5.desktop]
+Terminal=false
+Name=Edit dFreeRDP config
+Exec=mousepad /opt/config/dfreerdp.config
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-6.desktop]
+Terminal=true
+Name=Configure local language
+Exec=sudo dpkg-reconfigure locales
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-7.desktop]
+Terminal=true
+Name=Configure time zone
+Exec=sudo dpkg-reconfigure tzdata
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made.desktop]
+Terminal=false
+Name=Edit xFreeRDP config
+Exec=mousepad /opt/config/xfreerdp.config
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/usr/share/applications/florence.desktop]
+Encoding=UTF-8
+Name=Florence Virtual Keyboard
+Comment=Florence Virtual Keyboard
+Exec=florence
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/florence.svg
+Categories=Application;Accessibility;
+
+[/usr/share/applications/florence.desktop]
+Encoding=UTF-8
+Name=Florence Virtual Keyboard
+Comment=Florence Virtual Keyboard
+Exec=florence
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/florence.svg
+Categories=Application;Accessibility;
+
+[/usr/share/applications/xinput_calibrator.desktop]
+Name=Calibrate Touchscreen
+Comment=Run the calibration tool for touchscreens
+Exec=/bin/sh -c "xinput_calibrator; cat"
+Terminal=true
+Type=Application
+Icon=xinput_calibrator
+StartupNotify=true
+Categories=System;Settings;
+
+[/usr/share/applications/xinput_calibrator.desktop]
+Name=Calibrate Touchscreen
+Comment=Run the calibration tool for touchscreens
+Exec=/bin/sh -c "xinput_calibrator; cat"
+Terminal=true
+Type=Application
+Icon=xinput_calibrator
+StartupNotify=true
+Categories=System;Settings;
+
+[/home/rpitc/.local/share/applications/alacarte-made-9.desktop]
+Terminal=true
+Name=Configure CA
+Exec=sudo dpkg-reconfigure ca-certificates
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-10.desktop]
+Terminal=false
+Name=Audio Output Device Selector
+Exec=sudo /opt/scripts/audioselector.sh
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-8.desktop]
+Terminal=false
+Name=NoMachine Client
+Exec=/usr/NX/bin/nxplayer
+Type=Application
+Icon=/usr/NX/share/icons/48x48/NoMachine-icon.png
+Hidden=true
+
+[/usr/share/applications/Thunar-bulk-rename.desktop]
+Name=Bulk Rename
+Comment=Rename Multiple Files
+GenericName=Bulk Rename
+Exec=/usr/lib/arm-linux-gnueabihf/Thunar/ThunarBulkRename %F
+Icon=Thunar
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;Core;GTK;Filesystem;
+# vi:set encoding=UTF-8:
+
+[/usr/share/applications/Thunar-folder-handler.desktop]
+Name=Open Folder with Thunar
+Comment=Open the specified folders in Thunar
+GenericName=Open Folder
+TryExec=Thunar
+Exec=thunar %F
+Icon=Thunar
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;Core;GTK;FileTools;FileManager;
+MimeType=inode/directory;
+# vi:set encoding=UTF-8:
+
+[/usr/share/applications/Thunar.desktop]
+Name=Thunar File Manager
+Comment=Browse the filesystem with the file manager
+GenericName=File Manager
+Exec=thunar %F
+Icon=Thunar
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;Core;GTK;FileTools;FileManager;
+# vi:set encoding=UTF-8:
+
+[/usr/share/applications/thunar-settings.desktop]
+Version=1.0
+Name=File Manager
+Comment=Configure the Thunar file manager
+Exec=thunar-settings
+Icon=system-file-manager
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+
+[/usr/share/applications/Thunar-bulk-rename.desktop]
+Name=Bulk Rename
+Comment=Rename Multiple Files
+GenericName=Bulk Rename
+Exec=/usr/lib/arm-linux-gnueabihf/Thunar/ThunarBulkRename %F
+Icon=Thunar
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;Core;GTK;Filesystem;
+# vi:set encoding=UTF-8:
+
+[/usr/share/applications/Thunar-folder-handler.desktop]
+Name=Open Folder with Thunar
+Comment=Open the specified folders in Thunar
+GenericName=Open Folder
+TryExec=Thunar
+Exec=thunar %F
+Icon=Thunar
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;Core;GTK;FileTools;FileManager;
+MimeType=inode/directory;
+# vi:set encoding=UTF-8:
+
+[/usr/share/applications/Thunar.desktop]
+Name=Thunar File Manager
+Comment=Browse the filesystem with the file manager
+GenericName=File Manager
+Exec=thunar %F
+Icon=Thunar
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;Core;GTK;FileTools;FileManager;
+# vi:set encoding=UTF-8:
+
+[/usr/share/applications/thunar-settings.desktop]
+Version=1.0
+Name=File Manager
+Comment=Configure the Thunar file manager
+Exec=thunar-settings
+Icon=system-file-manager
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+StartupNotify=true
+
+[/usr/share/applications/mousepad.desktop]
+Encoding=UTF-8
+Name=Mousepad
+Comment=Simple Text Editor
+GenericName=Text Editor
+Exec=mousepad %F
+Icon=accessories-text-editor
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Application;Utility;TextEditor;GTK;
+MimeType=text/plain
+
+[/usr/share/applications/mousepad.desktop]
+Encoding=UTF-8
+Name=Mousepad
+Comment=Simple Text Editor
+GenericName=Text Editor
+Exec=mousepad %F
+Icon=accessories-text-editor
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Application;Utility;TextEditor;GTK;
+MimeType=text/plain
+
+[/home/rpitc/.local/share/applications/alacarte-made-12.desktop]
+Comment=Florence Virtual Keyboard
+Terminal=false
+Name=Florence Virtual Keyboard
+Exec=florence
+Type=Application
+Icon=/usr/share/pixmaps/florence.svg
+
+[/usr/share/applications/NoMachine-nxs.desktop]
+Encoding=UTF-8
+Comment=NoMachine session
+Exec="/usr/NX/bin/nxplayer" --session
+Icon=NoMachine-desktop
+Name=NoMachine
+Type=Application
+MimeType=application/nx-session;
+NoDisplay=true
+
+[/usr/share/applications/NoMachine-nxv.desktop]
+Encoding=UTF-8
+Comment=NoMachine recording
+Exec="/usr/NX/bin/nxplayer" --recording
+Icon=NoMachine-recording
+Name=NoMachine
+Type=Application
+MimeType=application/nx-recording;
+NoDisplay=true
+
+[/usr/share/applications/NoMachine-nxs.desktop]
+Encoding=UTF-8
+Comment=NoMachine session
+Exec="/usr/NX/bin/nxplayer" --session
+Icon=NoMachine-desktop
+Name=NoMachine
+Type=Application
+MimeType=application/nx-session;
+NoDisplay=true
+
+[/usr/share/applications/NoMachine-nxv.desktop]
+Encoding=UTF-8
+Comment=NoMachine recording
+Exec="/usr/NX/bin/nxplayer" --recording
+Icon=NoMachine-recording
+Name=NoMachine
+Type=Application
+MimeType=application/nx-recording;
+NoDisplay=true
+
+[/usr/share/applications/NoMachine-player-base-unity.desktop]
+Encoding=UTF-8
+Comment=Access NoMachine computers over the network
+Exec="/usr/NX/bin/nxplayer"
+Icon=NoMachine-icon
+Name=NoMachine Player
+Type=Application
+Categories=Network;
+OnlyShowIn=Unity;
+
+[/usr/share/applications/NoMachine-player-base-xfce.desktop]
+Encoding=UTF-8
+Comment=Access NoMachine computers over the network
+Exec="/usr/NX/bin/nxplayer"
+Icon=NoMachine-icon
+Name=NoMachine Player
+Type=Application
+Categories=Network;
+OnlyShowIn=XFCE;
+
+[/usr/share/applications/NoMachine-player-base.desktop]
+Encoding=UTF-8
+Comment=Access NoMachine computers over the network
+Exec="/usr/NX/bin/nxplayer"
+Icon=NoMachine-icon
+Name=NoMachine Player
+Type=Application
+NotShowIn=Unity;XFCE;
+
+[/usr/share/applications/NoMachine-player-base-unity.desktop]
+Encoding=UTF-8
+Comment=Access NoMachine computers over the network
+Exec="/usr/NX/bin/nxplayer"
+Icon=NoMachine-icon
+Name=NoMachine Player
+Type=Application
+Categories=Network;
+OnlyShowIn=Unity;
+
+[/usr/share/applications/NoMachine-player-base-xfce.desktop]
+Encoding=UTF-8
+Comment=Access NoMachine computers over the network
+Exec="/usr/NX/bin/nxplayer"
+Icon=NoMachine-icon
+Name=NoMachine Player
+Type=Application
+Categories=Network;
+OnlyShowIn=XFCE;
+
+[/usr/share/applications/NoMachine-player-base.desktop]
+Encoding=UTF-8
+Comment=Access NoMachine computers over the network
+Exec="/usr/NX/bin/nxplayer"
+Icon=NoMachine-icon
+Name=NoMachine Player
+Type=Application
+NotShowIn=Unity;XFCE;
+
+[/usr/share/applications/Xephyr.desktop]
+Encoding=UTF-8
+Name=Xephyr
+Exec=/opt/scripts/xephyr.sh
+Icon=/usr/share/pixmap/xephyr.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/usr/share/applications/Xephyr.desktop]
+Encoding=UTF-8
+Name=Xephyr
+Exec=/opt/scripts/xephyr.sh
+Icon=/usr/share/pixmap/xephyr.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/home/rpitc/.local/share/applications/alacarte-made-13.desktop]
+Terminal=false
+Name=Edit Xephyr config
+Exec=mousepad /opt/config/xephyr.config
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/usr/share/applications/remmina.desktop]
+Version=1.0
+Name=Remmina
+GenericName=Remote Desktop Client
+X-GNOME-FullName=Remmina Remote Desktop Client
+Comment=Connect to remote desktops
+TryExec=remmina
+Exec=remmina
+Icon=remmina
+Terminal=false
+Type=Application
+Categories=GTK;GNOME;X-GNOME-NetworkSettings;Network;
+Actions=Profile;Tray;
+
+[/usr/share/applications/remmina.desktop]
+Version=1.0
+Name=Remmina
+GenericName=Remote Desktop Client
+X-GNOME-FullName=Remmina Remote Desktop Client
+Comment=Connect to remote desktops
+TryExec=remmina
+Exec=remmina
+Icon=remmina
+Terminal=false
+Type=Application
+Categories=GTK;GNOME;X-GNOME-NetworkSettings;Network;
+Actions=Profile;Tray;
+
+[/usr/share/applications/configmgr.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Receiver (configmgr)
+NoDisplay=true
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/util/configmgr
+Exec=/opt/Citrix/ICAClient/util/configmgr -icaroot /opt/Citrix/ICAClient 
+
+[/usr/share/applications/conncenter.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Receiver (conncenter)
+NoDisplay=true
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/util/conncenter
+Exec=/opt/Citrix/ICAClient/util/conncenter -icaroot /opt/Citrix/ICAClient 
+
+[/usr/share/applications/new_store.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Add Citrix Store
+NoDisplay=true
+MimeType=application/vnd.citrix.receiver.configure
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/util/new_store
+Exec=/opt/Citrix/ICAClient/util/new_store -icaroot /opt/Citrix/ICAClient %f
+
+[/usr/share/applications/selfservice.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Receiver
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/selfservice
+Exec=/opt/Citrix/ICAClient/selfservice --icaroot /opt/Citrix/ICAClient 
+
+[/usr/share/applications/wfica.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Receiver Engine
+StartupWMClass=Wfica
+NoDisplay=true
+MimeType=application/x-ica
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/wfica
+Exec=/opt/Citrix/ICAClient/wfica -icaroot /opt/Citrix/ICAClient %f
+
+[/usr/share/applications/configmgr.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Receiver (configmgr)
+NoDisplay=true
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/util/configmgr
+Exec=/opt/Citrix/ICAClient/util/configmgr -icaroot /opt/Citrix/ICAClient 
+
+[/usr/share/applications/conncenter.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Receiver (conncenter)
+NoDisplay=true
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/util/conncenter
+Exec=/opt/Citrix/ICAClient/util/conncenter -icaroot /opt/Citrix/ICAClient 
+
+[/usr/share/applications/new_store.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Add Citrix Store
+NoDisplay=true
+MimeType=application/vnd.citrix.receiver.configure
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/util/new_store
+Exec=/opt/Citrix/ICAClient/util/new_store -icaroot /opt/Citrix/ICAClient %f
+
+[/usr/share/applications/selfservice.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Receiver
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/selfservice
+Exec=/opt/Citrix/ICAClient/selfservice --icaroot /opt/Citrix/ICAClient 
+
+[/usr/share/applications/wfica.desktop]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Receiver Engine
+StartupWMClass=Wfica
+NoDisplay=true
+MimeType=application/x-ica
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/opt/Citrix/ICAClient/icons/manager.png
+TryExec=/opt/Citrix/ICAClient/wfica
+Exec=/opt/Citrix/ICAClient/wfica -icaroot /opt/Citrix/ICAClient %f
+
+[/usr/share/applications/systemadm.desktop]
+Name=systemadm
+Comment=Manage Systemd Units
+Exec=systemadm
+Icon=applications-system
+Terminal=false
+Type=Application
+Categories=System;Settings;
+
+[/usr/share/applications/systemadm.desktop]
+Name=systemadm
+Comment=Manage Systemd Units
+Exec=systemadm
+Icon=applications-system
+Terminal=false
+Type=Application
+Categories=System;Settings;
+
+[/home/rpitc/.local/share/applications/alacarte-made-14.desktop]
+Comment=Change numlock state
+Terminal=false
+Name=Numlock Selector
+Exec=sudo /opt/scripts/numlockselector.sh
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/Xephyr.desktop]
+Encoding=UTF-8
+Name=Xephyr
+Exec=/opt/scripts/xephyr.sh
+Icon=/usr/share/pixmap/xephyr.png
+Type=Application
+NoDisplay=false
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/home/rpitc/.local/share/applications/RDesktop.desktop]
+Encoding=UTF-8
+Name=RDesktop
+Exec=/opt/scripts/rdesktop.sh
+Icon=/usr/share/pixmap/rdesktop.png
+Type=Application
+NoDisplay=false
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/home/rpitc/.local/share/applications/xFreeRDP.desktop]
+Encoding=UTF-8
+Name=xFreeRDP
+Exec=/opt/scripts/xfreerdp.sh
+Icon=/usr/share/pixmap/freerdp.png
+Type=Application
+NoDisplay=false
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/home/rpitc/.local/share/applications/dFreeRDP.desktop]
+Encoding=UTF-8
+Name=dFreeRDP FB Accelerated
+Exec=sudo /opt/scripts/dfreerdp.sh
+Icon=/usr/share/pixmap/freerdp.png
+Type=Application
+NoDisplay=false
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/home/rpitc/.local/share/applications/vmware-horizon.desktop]
+Encoding=UTF-8
+Name=VMWare Horizon
+Exec=vmware-view
+Icon=/usr/share/pixmap/vmware-view.png
+Type=Application
+NoDisplay=false
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;
+
+[/home/rpitc/.local/share/applications/alacarte-made-15.desktop]
+Terminal=false
+Name=VNCServer Password Changer
+Exec=/opt/scripts/vncpasswdchanger.sh
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-11.desktop]
+Terminal=false
+Name=Edit xFreeRDP server
+Exec=mousepad /opt/config/xfreerdp.server
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-16.desktop]
+Terminal=false
+Name=Edit RDesktop server
+Exec=mousepad /opt/config/rdesktop.server
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-17.desktop]
+Terminal=false
+Name=Edit dFreeRDP server
+Exec=mousepad /opt/config/dfreerdp.server
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+
+[/home/rpitc/.local/share/applications/alacarte-made-18.desktop]
+Terminal=false
+Name=Edit Xephyr server
+Exec=mousepad /opt/config/xephyr.server
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+

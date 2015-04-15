@@ -1,0 +1,10 @@
+#!/bin/sh
+#Wait for the desktop and start the script:
+sleep 3
+#Update date/time with sntp
+sudo /usr/bin/sntp -s $1
+#Save time in fake-hwclock
+sudo /sbin/fake-hwclock save
+#Now start Conky
+conky -d -c /home/rpitc/.conkyrc
+exit

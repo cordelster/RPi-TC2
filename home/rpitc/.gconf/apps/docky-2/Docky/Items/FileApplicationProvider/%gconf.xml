@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="AllowPinToDock" mtime="1428483758" type="bool" value="false"/>
+</gconf>

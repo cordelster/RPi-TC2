@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=dFreeRDP FB Accelerated
+Exec=sudo /opt/scripts/dfreerdp.sh
+Icon=/usr/share/pixmap/freerdp.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;

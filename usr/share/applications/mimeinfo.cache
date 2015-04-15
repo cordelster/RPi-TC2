@@ -1,0 +1,25 @@
+[MIME Cache]
+application/nx-recording=NoMachine-nxv.desktop;
+application/nx-session=NoMachine-nxs.desktop;
+application/rdf+xml=iceweasel.desktop;
+application/rss+xml=iceweasel.desktop;
+application/vnd.cendio.thinlinc.clientconf=thinlinc-client.desktop;
+application/vnd.citrix.receiver.configure=new_store.desktop;
+application/vnd.mozilla.xul+xml=iceweasel.desktop;
+application/x-2xa=2XSession.desktop;
+application/x-ica=wfica.desktop;
+application/x-ms-dos-executable=mono-runtime-terminal.desktop;mono-runtime-common.desktop;
+application/x-virt-viewer=remote-viewer.desktop;
+application/xhtml+xml=iceweasel.desktop;
+application/xml=iceweasel.desktop;
+image/gif=iceweasel.desktop;
+image/jpeg=iceweasel.desktop;
+image/png=iceweasel.desktop;
+inode/directory=Thunar-folder-handler.desktop;
+text/html=iceweasel.desktop;
+text/plain=mousepad.desktop;
+text/xml=iceweasel.desktop;
+x-scheme-handler/http=iceweasel.desktop;
+x-scheme-handler/https=iceweasel.desktop;
+x-scheme-handler/spice=remote-viewer.desktop;
+x-scheme-handler/tuxclient=tuxclient.desktop;

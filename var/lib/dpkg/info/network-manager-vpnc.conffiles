@@ -1,0 +1,2 @@
+/etc/NetworkManager/VPN/nm-vpnc-service.name
+/etc/dbus-1/system.d/nm-vpnc-service.conf

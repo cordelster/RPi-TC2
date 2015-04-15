@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/liboath0
+/usr/share/doc/liboath0/README
+/usr/share/doc/liboath0/AUTHORS
+/usr/share/doc/liboath0/NEWS.gz
+/usr/share/doc/liboath0/changelog.Debian.gz
+/usr/share/doc/liboath0/changelog.gz
+/usr/share/doc/liboath0/copyright
+/usr/lib
+/usr/lib/liboath.so.0.1.3
+/usr/lib/liboath.so.0

@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libusbredirhost
+Description: usbredirhost library
+Version: 0.7
+Libs: -L${libdir} -lusbredirhost
+Requires.private: libusb-1.0 libusbredirparser-0.5
+Cflags: -I${includedir}

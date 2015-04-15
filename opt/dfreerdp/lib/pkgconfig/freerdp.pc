@@ -1,0 +1,13 @@
+prefix=/opt/dfreerdp
+exec_prefix=/opt/dfreerdp
+libdir=/opt/dfreerdp/lib
+includedir=/opt/dfreerdp/include
+
+Name: FreeRDP
+Description: A free remote desktop protocol client
+URL: http://www.freerdp.com/
+Version: 1.0.3
+Requires: 
+Libs: -L${libdir} -lfreerdp-core -lfreerdp-codec -lfreerdp-gdi -lfreerdp-kbd -lfreerdp-rail -lfreerdp-channels -lfreerdp-utils
+Cflags: -I${includedir}
+

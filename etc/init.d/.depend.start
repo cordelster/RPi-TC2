@@ -1,0 +1,7 @@
+TARGETS = pcscd dbus vmwareusbd ctxusbd cups motd killprocs ssh ntp network-manager openvpn bootlogs single rc.local rmnologin
+INTERACTIVE = openvpn
+network-manager: dbus
+openvpn: network-manager
+single: killprocs bootlogs motd
+rc.local: pcscd openvpn network-manager dbus vmwareusbd ctxusbd bootlogs cups motd ssh ntp
+rmnologin: pcscd openvpn network-manager dbus vmwareusbd ctxusbd bootlogs cups motd ssh ntp

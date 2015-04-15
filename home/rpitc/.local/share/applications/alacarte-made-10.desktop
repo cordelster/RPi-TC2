@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=Audio Output Device Selector
+Exec=sudo /opt/scripts/audioselector.sh
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

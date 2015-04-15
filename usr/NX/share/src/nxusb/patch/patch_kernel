@@ -1,0 +1,27 @@
+#!/bin/sh
+
+help()
+{
+	echo "Usage: $(basename $0) <kernel_sources_dir>"
+	exit 1
+}
+
+if [ $# -ne 1 ] ; then
+	help
+elif [ ! -d "$1" ] ; then
+	help
+fi
+
+KERNEL_DIR="$1"
+
+sed -e '/^\s*source "drivers\/usb\/misc\/sisusbvga\/Kconfig"\s*$/ a \
+source "drivers\/usb\/misc\/eveusb\/Kconfig"' -i "$KERNEL_DIR/drivers/usb/misc/Kconfig"
+
+sed -e '/^\s*obj-\$(CONFIG_USB_SISUSBVGA)\s*+=\s*sisusbvga\/\s*$/ a \
+obj-\$(CONFIG_USB_ELTIMA_EVEUSB) 	+= eveusb\/' -i "$KERNEL_DIR/drivers/usb/misc/Makefile"
+
+grep eveusb "$KERNEL_DIR/drivers/usb/misc/Kconfig" "$KERNEL_DIR/drivers/usb/misc/Makefile"
+if [ ! $? ] ; then
+	echo "Cannot patch $KERNEL_DIR"
+fi
+

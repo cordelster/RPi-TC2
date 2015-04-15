@@ -1,0 +1,5 @@
+b570ba8917c025dd1938957c0e830889  usr/lib/arm-linux-gnueabihf/libQtDBus.so.4.8.6
+eb6c371255e1262c55ae9b652a90b528  usr/share/doc/libqtdbus4/LGPL_EXCEPTION.txt
+9e46204f5660689e18bca6b25ce9d70d  usr/share/doc/libqtdbus4/changelog.Debian.gz
+d49cf542b1b3ba75bad90e9560c459d3  usr/share/doc/libqtdbus4/copyright
+aa8c7444ac1d86ac5bbc42bd0eb1d96c  usr/share/lintian/overrides/libqtdbus4

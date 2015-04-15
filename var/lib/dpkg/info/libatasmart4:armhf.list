@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libatasmart4
+/usr/share/doc/libatasmart4/changelog.Debian.gz
+/usr/share/doc/libatasmart4/copyright
+/usr/share/doc/libatasmart4/README
+/lib
+/lib/arm-linux-gnueabihf
+/lib/arm-linux-gnueabihf/libatasmart.so.4.0.5
+/lib/arm-linux-gnueabihf/libatasmart.so.4

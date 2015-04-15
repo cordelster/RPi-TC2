@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=NoMachine recording
+Hidden=false
+Icon=/usr/NX/share/icons/48x48/NoMachine-recording.png
+MimeType=application/nx-recording
+Patterns=*.nxv
+Type=MimeType

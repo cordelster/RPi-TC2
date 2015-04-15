@@ -1,0 +1,2 @@
+?package(pavucontrol):needs="X11" section="Applications/Sound"\
+  title="pavucontrol" command="/usr/bin/pavucontrol"

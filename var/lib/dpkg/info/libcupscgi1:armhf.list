@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libcupscgi1
+/usr/share/doc/libcupscgi1/copyright
+/usr/share/doc/libcupscgi1/changelog.gz
+/usr/share/doc/libcupscgi1/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libcupscgi.so.1

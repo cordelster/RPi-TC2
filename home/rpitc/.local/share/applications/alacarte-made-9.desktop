@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=true
+Name=Configure CA
+Exec=sudo dpkg-reconfigure ca-certificates
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

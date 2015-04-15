@@ -1,0 +1,10 @@
+5463551d1502171220dd365d018607ea  usr/lib/cups/filter/pdftoippprinter
+d3d1abebbb4d9662b83e3fc94586c70b  usr/lib/cups/filter/pdftopdf
+17babed9ad87e3160ff02f437d509602  usr/lib/cups/filter/pdftops
+1dd9b01a8a8468761d20090f496114cd  usr/lib/cups/filter/pdftoraster
+1bff0808b272c23324a37724281f2417  usr/lib/cups/filter/rastertopclx
+78ccdc5171c4ed764e8a5b44bbe9b7db  usr/share/doc/cups-filters-core-drivers/AUTHORS
+426458cb5300f5360d1611122f03fddc  usr/share/doc/cups-filters-core-drivers/README.gz
+ae32a3f246458b1511088a5de5fa4274  usr/share/doc/cups-filters-core-drivers/changelog.Debian.gz
+cff01a21ca3e4f7148dd275555577daf  usr/share/doc/cups-filters-core-drivers/changelog.gz
+e2ab3e286f85c66eb7c62d8f77deeee5  usr/share/doc/cups-filters-core-drivers/copyright

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Comment=Access NoMachine computers over the network
+Exec=/usr/NX/bin/nxplayer
+Icon=/usr/NX/share/icons/48x48/NoMachine-icon.png
+Name=NoMachine
+Type=Application
+MimeType=application/nx-session
+Categories=Application;Network
+OnlyShowIn=GNOME;

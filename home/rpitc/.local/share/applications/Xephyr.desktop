@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Xephyr
+Exec=/opt/scripts/xephyr.sh
+Icon=/usr/share/pixmap/xephyr.png
+Type=Application
+NoDisplay=false
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;

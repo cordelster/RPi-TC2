@@ -1,0 +1,7 @@
+CITRIX LICENSE AGREEMENT
+
+Use of this component is subject to the Citrix license or terms of service covering the Citrix product(s) or service(s) with which you will be using this component. This component is licensed for use only with such Citrix product(s) or service(s).
+
+This component includes FFmpeg, which is licensed exclusively under the LGPLv2.1 at http://ffmpeg.org/legal.html.
+
+CTX_code EP_T_A124358

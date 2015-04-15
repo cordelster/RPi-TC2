@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=VMWare Horizon
+Exec=vmware-view
+Icon=/usr/share/pixmap/vmware-view.png
+Type=Application
+NoDisplay=false
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;

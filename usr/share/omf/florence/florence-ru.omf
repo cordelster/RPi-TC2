@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<omf>
+  <resource>
+    <creator>f.agrech@gmail.com (Франсуа Agrech)</creator>
+    <maintainer>f.agrech@gmail.com (Франсуа Agrech)</maintainer>
+    <title>Документация Florence</title>
+    <date>November, the 2nd of 2014</date>
+    <version identifier="0.6.3" date="November, the 2nd of 2014"/>
+    <subject category="GNOME|Accessibility"/>
+    <description>Этот документ описывает как установить, настроить и использовать виртуальную клавиатуру Florence.</description>
+    <type>user's guide</type>
+    <format mime="text/xml" dtd="-//OASIS//DTD DocBook XML V4.1.2//EN"/>
+    <identifier url="file:///usr/share/gnome/help/florence/ru/florence.xml"/>
+    <language code="ru"/>
+    <relation seriesid="de2bf600-264f-11dd-81e2-d141ac518859"/>
+    <rights type="GNU FDL" license.version="1.2" holder="François Agrech"/>
+  </resource>
+</omf>

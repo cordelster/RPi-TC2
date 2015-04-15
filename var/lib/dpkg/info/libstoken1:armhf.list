@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libstoken1
+/usr/share/doc/libstoken1/copyright
+/usr/share/doc/libstoken1/changelog.gz
+/usr/share/doc/libstoken1/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libstoken.so.1.2.0
+/usr/lib/arm-linux-gnueabihf/libstoken.so.1

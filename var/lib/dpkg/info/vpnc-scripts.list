@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/vpnc-scripts
+/usr/share/doc/vpnc-scripts/copyright
+/usr/share/doc/vpnc-scripts/README.Debian
+/usr/share/doc/vpnc-scripts/changelog.Debian.gz
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/vpnc-scripts
+/usr/share/vpnc-scripts
+/usr/share/vpnc-scripts/vpnc-script
+/usr/share/vpnc-scripts/vpnc-script-sshd

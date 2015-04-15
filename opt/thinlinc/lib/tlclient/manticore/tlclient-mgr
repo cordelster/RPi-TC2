@@ -1,0 +1,13 @@
+#!/bin/sh
+if [ "$1" ]; then
+    exit
+else
+    uuid=`cat /proc/sys/kernel/random/uuid`
+    mclient create root/ConnectionType/thinlinc/connections/\{${uuid}\}/authorizations/user/edit
+    if groups | grep root; then
+        mclient set root/ConnectionType/thinlinc/connections/\{${uuid}\}/authorizations/user/edit 0
+    else
+        mclient set root/ConnectionType/thinlinc/connections/\{${uuid}\}/authorizations/user/edit 1
+    fi
+    mclient commit
+fi

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=Edit left menu
+Exec=mousepad /home/rpitc/.gconf/apps/docky-2/Docky/Interface/DockPreferences/Dock1/%%gconf.xml
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

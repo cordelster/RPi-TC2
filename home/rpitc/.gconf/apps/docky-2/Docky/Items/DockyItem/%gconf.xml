@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="ShowDockyItem" mtime="1428483758" type="bool" value="false"/>
+	<entry name="ShowQuit" mtime="1428483758" type="bool" value="false"/>
+	<entry name="ShowSettings" mtime="1428483758" type="bool" value="false"/>
+</gconf>

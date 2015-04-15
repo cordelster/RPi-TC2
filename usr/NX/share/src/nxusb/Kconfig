@@ -1,0 +1,9 @@
+config USB_ELTIMA_EVEUSB
+	tristate "USB Network Gate by Eltima"
+	depends on USB && USB_ARCH_HAS_HCD
+        ---help---
+	  Kernel module for USB Network Gate by Eltima Software.
+
+	  To compile this driver as a module, choose M here; the module will be
+	  called eveusb. If unsure, say N.
+

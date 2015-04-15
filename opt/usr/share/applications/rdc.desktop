@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=RDC
+Name[de]=RDC
+Commen=Remote Desktop Client
+Comment[de]=Remote Desktop Client
+Exec=/usr/bin/rdc
+Icon=rdc
+Terminal=false
+Type=Application
+Categories=Network;
+StartupNotify=false

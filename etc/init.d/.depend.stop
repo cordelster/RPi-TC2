@@ -1,0 +1,8 @@
+TARGETS = fake-hwclock pcscd vmwareusbd ctxusbd cups openvpn hwclock.sh urandom alsa-utils network-manager sendsigs umountnfs.sh umountfs umountroot halt reboot
+network-manager: openvpn
+sendsigs: pcscd openvpn alsa-utils network-manager
+umountnfs.sh: pcscd openvpn alsa-utils network-manager sendsigs
+umountfs: pcscd urandom umountnfs.sh openvpn alsa-utils network-manager hwclock.sh
+umountroot: fake-hwclock umountfs
+halt: umountroot
+reboot: umountroot

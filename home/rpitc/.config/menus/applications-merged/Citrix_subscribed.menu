@@ -1,0 +1,12 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<!-- This file was created by the Citrix StoreFront sub-system. -->
+<Menu>
+ <Name>Applications</Name>
+ <Menu>
+  <Name>Citrix Subscriptions</Name>
+  <Include>
+  <Category>Citrix-subscribed</Category>
+  </Include>
+ </Menu>
+</Menu>

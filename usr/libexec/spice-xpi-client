@@ -1,0 +1,2 @@
+#!/bin/sh
+exec remote-viewer --spice-controller "$@" 2>&1

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=NoMachine session
+Hidden=false
+Icon=/usr/NX/share/icons/48x48/NoMachine-desktop.png
+MimeType=application/nx-session
+Patterns=*.nxs
+Type=MimeType

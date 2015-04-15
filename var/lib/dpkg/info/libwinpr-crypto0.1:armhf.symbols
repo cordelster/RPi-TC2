@@ -1,0 +1,8 @@
+libwinpr-crypto.so.0.1 libwinpr-crypto0.1 #MINVER#
+ CertCloseStore@Base 1.1.0~beta1+git20130629
+ CertEnumCertificatesInStore@Base 1.1.0~beta1+git20130629
+ CertFindCertificateInStore@Base 1.1.0~beta1+git20130629
+ CertGetNameStringA@Base 1.1.0~beta1+git20130629
+ CertGetNameStringW@Base 1.1.0~beta1+git20130629
+ CertOpenSystemStoreA@Base 1.1.0~beta1+git20130629
+ CertOpenSystemStoreW@Base 1.1.0~beta1+git20130629

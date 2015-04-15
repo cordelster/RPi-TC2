@@ -1,0 +1,98 @@
+ 
+
+NX> 700 Starting install at: Sat Mar 28 19:51:47 2015.
+NX> 700 Installing: nxclient version: 4.4.12.
+NX> 700 Using installation profile: Debian.
+NX> 700 Install log is: /usr/NX/var/log/nxinstall.log.
+NX> 700 Running: /bin/chown root:root '/etc/NX/player/localhost/client.cfg'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chown root:root '/usr/NX/scripts/restricted/nxfunct.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 744 '/usr/NX/scripts/restricted/nxfunct.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chown root:root '/usr/NX/scripts/restricted/nxusb.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 744 '/usr/NX/scripts/restricted/nxusb.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod u+s '/usr/NX/scripts/restricted/nxusb.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chown root:root '/usr/NX/scripts/restricted/nxtun.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 744 '/usr/NX/scripts/restricted/nxtun.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod u+s '/usr/NX/scripts/restricted/nxtun.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chown root:root '/usr/NX/bin/nxexec'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 555 '/usr/NX/bin/nxexec'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod u+s '/usr/NX/bin/nxexec'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chown root:root '/usr/NX/bin/nxfsm'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 555 '/usr/NX/bin/nxfsm'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod u+s '/usr/NX/bin/nxfsm'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chown root:root '/usr/NX/scripts/restricted/nxtun.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 744 '/usr/NX/scripts/restricted/nxtun.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod u+s '/usr/NX/scripts/restricted/nxtun.sh'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chown root:root '/usr/NX/bin/nxexec'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 555 '/usr/NX/bin/nxexec'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod u+s '/usr/NX/bin/nxexec'.
+NX> 700 Result: OK.
+NX> 700 Running: /usr/bin/install -g root -m 500 -o root '/usr/NX/bin/nxprint' '/usr/lib/cups/backend/nxprint'.
+NX> 700 Result: OK.
+NX> 700 Installing XDG Mime.
+NX> 700 Running: /usr/bin/xdg-desktop-menu install --mode system '/usr/NX/share/applnk/client/xdg/NoMachine-nxs.desktop' '/usr/NX/share/applnk/client/xdg/NoMachine-nxv.desktop'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/mkdir -p '/usr/NX/var/run'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 1777 '/usr/NX/var/run'.
+NX> 700 Result: OK.
+NX> 700 Compiling the USB module.
+NX> 700 Cannot compile USB module.
+NX> 700 Support for USB forwarding over the network will not
+NX> 700 be available.
+NX> 700 To compile USB module be sure that Linux kernel headers
+NX> 700 are available. You can then update this installation.
+NX> 700 Running: /bin/cp -f '/usr/NX/share/mimetypes.sample' '/usr/NX/share/mimetypes'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/mkdir -p '/media/nomachine'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 1777 '/media/nomachine'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chown root:root '/usr/NX/etc/version'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 444 '/usr/NX/etc/version'.
+NX> 700 Result: OK.
+NX> 700 Running: /usr/bin/install -g root -m 644 -o root '/usr/NX/scripts/etc/pam.d/nx' '/etc/pam.d/'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chown root:root '/usr/NX/etc/update.cfg'.
+NX> 700 Result: OK.
+NX> 700 Running: /bin/chmod 644 '/usr/NX/etc/update.cfg'.
+NX> 700 Result: OK.
+ 
+
+NX> 700 Installing: nxplayer version: 4.4.12.
+NX> 700 Using installation profile: Debian.
+NX> 700 Install log is: /usr/NX/var/log/nxinstall.log.
+NX> 700 Running: /bin/chown root:root '/etc/NX/player/localhost/player.cfg'.
+NX> 700 Result: OK.
+NX> 700 Installing with XDG.
+NX> 700 Creating XDG Menu.
+NX> 700 Running: /usr/bin/xdg-desktop-menu install --mode system '/usr/NX/share/applnk/player/xdg/NoMachine-player-dir.directory' '/usr/NX/share/applnk/player/xdg/NoMachine-player-base.desktop' '/usr/NX/share/applnk/player/xdg/NoMachine-player-base-unity.desktop'.
+NX> 700 Result: OK.
+NX> 700 Running: /usr/bin/xdg-desktop-menu install --mode system '/usr/NX/share/applnk/player/xdg/NoMachine-player-base-xfce.desktop'.
+NX> 700 Result: OK.
+NX> 700 XDG Menu file: /etc/xdg/menus/applications-merged/NoMachine-player-dir.menu.
+NX> 700 Running: /bin/mv '/etc/xdg/menus/applications-merged/NoMachine-player-dir.menu.bkp' '/etc/xdg/menus/applications-merged/NoMachine-player-dir.menu'.
+NX> 700 Result: OK.
+NX> 700 Updated XDG menu file '/etc/xdg/menus/applications-merged/NoMachine-player-dir.menu'.
+NX> 700 XDG installed properly.
+NX> 700 Install completed at: Sat Mar 28 19:51:55 2015.

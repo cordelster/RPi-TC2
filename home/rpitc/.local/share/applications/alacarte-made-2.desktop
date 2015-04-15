@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=Edit RDesktop config
+Exec=mousepad /opt/config/rdesktop.config
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

@@ -1,0 +1,53 @@
+# <kernel_sources>/Documentation/kbuild/modules.txt
+# In newer versions of the kernel, kbuild will first look for a file named "Kbuild," 
+# and only if that is not found, will it then look for a Makefile.
+
+CONFIG_USB_ELTIMA_EVEUSB ?= m
+# NX changes #
+obj-$(CONFIG_USB_ELTIMA_EVEUSB) := nxusb.o
+
+nxusb-objs := \
+	module.o \
+	utils.o \
+	usb_descr.o \
+	usb_device.o \
+	message_queue.o \
+	platform.o \
+	dev.o \
+	vhub.o \
+	trans.o \
+	log.o
+# NX #
+
+# files that shall be built, but shall not be linked as part of built-in.o
+extra-y := include/linux/usb
+
+HDRDIR := $(VERSION).$(PATCHLEVEL).$(SUBLEVEL)
+
+$(src)/include/linux/usb:
+	@echo "KERNELRELEASE=$(KERNELRELEASE), VERSION $(VERSION), PATCHLEVEL $(PATCHLEVEL), SUBLEVEL $(SUBLEVEL), EXTRAVERSION=$(EXTRAVERSION)"
+	mkdir -p $(src)/include/linux && \
+	cd $(src)/include/linux && \
+	ln -sf ../$(HDRDIR) usb
+
+
+# Some systems have kernel headers without <linux/usb/hcd.h>, so it supplies
+# by us from corresponding vanilla kernels. Our hcd.h should be used if and 
+# only if one not found in standard system paths. This prevents misterious bugs
+# on systems with patched/customized kernels (RedHat Enterprise Linux, etc).
+#
+# -idirafter -> search dir for header files, but do it after all directories specified with -I and
+# the standard system directories have been exhausted. dir is treated as a system include directory.
+
+ccflags-y := -Wno-error -idirafter $(src)/include
+
+ifdef DEBUG
+	ccflags-y += -DDEBUG
+endif
+
+# Documentation/kbuild/makefiles.txt, Compilation flags
+# Note: Flags with the same behaviour were previously named:
+# EXTRA_CFLAGS, EXTRA_AFLAGS and EXTRA_LDFLAGS.
+# They are still supported but their usage is deprecated.
+
+EXTRA_CFLAGS := $(ccflags-y)

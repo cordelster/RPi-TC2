@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/xfce4-volumed
+/usr/share/doc/xfce4-volumed/changelog.gz
+/usr/share/doc/xfce4-volumed/changelog.Debian.gz
+/usr/share/doc/xfce4-volumed/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/xfce4-volumed
+/usr/bin
+/usr/bin/xfce4-volumed
+/etc
+/etc/xdg
+/etc/xdg/autostart
+/etc/xdg/autostart/xfce4-volumed.desktop

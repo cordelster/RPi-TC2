@@ -1,0 +1,67 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Florence
+Source: http://florence.sourceforge.net/
+
+Files: *
+Copyright: Copyright (C) 2008-2014 François Agrech <f.agrech@gmail.com>
+License: GPL-2+
+
+Files: src/system.h
+Copyright: Copyright (C) 89, 91, 92, 93, 94, 1996 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: gnome-doc-utils.make
+Copyright: Copyright (C) 2004-2005 Shaun McCance <shaunm@gnome.org>
+License: GPL-2+
+
+Files: data/relaxng/svg*.rng data/svg11/svg*.rnc
+Copyright: Copyright 2001, 2002 World Wide Web Consortium
+ (Massachusetts Institute of Technology, Institut National de
+ Recherche en Informatique et en Automatique, Keio University)
+License: permissive
+ Permission to use, copy, modify and distribute this RELAX NG schema
+ for SVG and its accompanying documentation for any purpose and without
+ fee is hereby granted in perpetuity, provided that the above copyright
+ notice and this paragraph appear in all copies.  The copyright holders
+ nor the author make no representation about the suitability of this
+ RELAX NG schema for any purpose.
+ .
+ It is provided "as is" without expressed or implied warranty.
+
+Files: docs/*
+Copyright: Copyright (C) 2008-2014 François Agrech <f.agrech@gmail.com>
+License: GFDL-NIV
+ Permission is granted to copy, distribute and/or modify this document
+ under the terms of the GNU Free Documentation License, Version 1.2 or
+ any later version published by the Free Software Foundation; with no
+ Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the full text of the GNU Free Documentation License
+ version 1.2 can be found in the file
+ `/usr/share/common-licenses/GFDL-1.2`.
+
+Files: debian/*
+Copyright: Copyright (C) 2011-2012 Jérémy Bobbio <lunar@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.

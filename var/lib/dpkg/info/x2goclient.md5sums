@@ -1,0 +1,15 @@
+04d9de38add320b8fabfe3934510eb67  usr/bin/x2goclient
+bd09741461dceee58f2d9c701aa34446  usr/share/applications/x2goclient.desktop
+a5a507d0012d96352b8983e6415013f7  usr/share/doc/x2goclient/HOWTO.GPGCARD.gz
+69568208b8bfdec61bd7dabeb4a17fdb  usr/share/doc/x2goclient/changelog.Debian.gz
+bbfef76bdc5da4eec6bb699cc88d3a53  usr/share/doc/x2goclient/changelog.gz
+5f39680697c6e80c589b050dbf92ca62  usr/share/doc/x2goclient/copyright
+102a638182a37e89b9dd249d642f5b50  usr/share/doc/x2goclient/examples/x2goclient-cli.gz
+ed286ddd180a287201e43436f59dbed5  usr/share/icons/hicolor/128x128/apps/x2goclient.png
+b1c6e16f917a67c6ca0251005e0e7f16  usr/share/icons/hicolor/16x16/apps/x2goclient.png
+a01f708b908f61b032213e7b89278bdc  usr/share/icons/hicolor/32x32/apps/x2goclient.png
+e1e091ea4feda3eccb5b475e087c8953  usr/share/icons/hicolor/64x64/apps/x2goclient.png
+5c63aae16b4c3429a7e62ee287623262  usr/share/man/man1/x2goclient.1.gz
+ed286ddd180a287201e43436f59dbed5  usr/share/x2goclient/icons/x2goclient.png
+3a5cdaa880e70d21119ba083c12f17af  usr/share/x2goclient/icons/x2goclient.xpm
+34fdbafb9d5ee2fd3b8adcbb52a8b806  usr/share/x2goclient/icons/x2gosession.png

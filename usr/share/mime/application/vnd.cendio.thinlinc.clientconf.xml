@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnd.cendio.thinlinc.clientconf">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment xml:lang="en">ThinLinc Client Configuration</comment>
+  <comment xml:lang="sv">Konfiguration för ThinLinc-klient</comment>
+  <glob pattern="*.tlclient"/>
+</mime-type>

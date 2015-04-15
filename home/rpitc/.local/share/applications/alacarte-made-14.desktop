@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Change numlock state
+Terminal=false
+Name=Numlock Selector
+Exec=sudo /opt/scripts/numlockselector.sh
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

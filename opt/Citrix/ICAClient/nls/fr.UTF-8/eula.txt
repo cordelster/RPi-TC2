@@ -1,0 +1,7 @@
+CONTRAT DE LICENCE CITRIX
+
+L'utilisation de ce composant est régie par la licence Citrix ou les conditions de service qui couvrent les produits ou services Citrix avec lesquels vous allez utiliser ce composant. La licence de ce composant ne permet l'utilisation de ce dernier qu'avec des produits ou services Citrix sous licence.
+
+Ce composant comprend FFmpeg, qui est disponible sous licence exclusive LGPLv2.1 sur http://ffmpeg.org/legal.html.
+
+CTX_code EP_T_A124358

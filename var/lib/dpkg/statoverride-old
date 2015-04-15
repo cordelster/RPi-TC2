@@ -1,0 +1,5 @@
+root crontab 2755 /usr/bin/crontab
+root ssl-cert 710 /etc/ssl/private
+puppet puppet 750 /var/lib/puppet
+root messagebus 4754 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+puppet puppet 750 /var/run/puppet

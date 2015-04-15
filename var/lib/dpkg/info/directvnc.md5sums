@@ -1,0 +1,12 @@
+6fef17b93de04f7a5371996f6e118382  usr/bin/directvnc
+3f8ee56f7b227c32e7ab80ba7a91a338  usr/bin/directvnc-xmapconv
+71cf847a90d258da0c93b55320483e52  usr/share/doc/directvnc/AUTHORS
+7fa4c31cac60ae57a480104cc14561c0  usr/share/doc/directvnc/README
+28ff3fa6a825c52d8e425d8233362fe1  usr/share/doc/directvnc/README.Debian
+d9400dc29a2c749d8907b20640fd36a6  usr/share/doc/directvnc/changelog.Debian.armhf.gz
+3a5def21a9efb4bc5c6e516d494da0fe  usr/share/doc/directvnc/changelog.Debian.gz
+134aade95031ac8e76a17da825a5d1de  usr/share/doc/directvnc/changelog.gz
+0e6188b8cd2b09a3bbdee5b52fd4794c  usr/share/doc/directvnc/copyright
+7b7f08cc5958b10dc9613d03c0b343d5  usr/share/man/man1/directvnc-xmapconv.1.gz
+cded011723cb238c1abd51190f893a95  usr/share/man/man1/directvnc.1.gz
+955be11e37e606389c8b5d013ced8070  usr/share/man/man7/directvnc-kbmapping.7.gz

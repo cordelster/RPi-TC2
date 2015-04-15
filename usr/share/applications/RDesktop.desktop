@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=RDesktop
+Exec=/opt/scripts/rdesktop.sh
+Icon=/usr/share/pixmap/rdesktop.png
+Type=Application
+NoDisplay=true
+Terminal=false
+StartupNotify=true
+Categories=Application;Network;

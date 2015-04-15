@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=true
+Name=Configure time zone
+Exec=sudo dpkg-reconfigure tzdata
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

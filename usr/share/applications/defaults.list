@@ -1,0 +1,4 @@
+[Default Applications]
+application/vnd.cendio.thinlinc.clientconf=thinlinc-client.desktop
+application/nx-session=NoMachine-nxs.desktop
+application/nx-recording=NoMachine-nxv.desktop

@@ -1,0 +1,64 @@
+#!/bin/sh
+# The settings for chkconfig:
+# chkconfig is used on Redhat and Fedora instead of update-rc.d to update init levels
+# the default values of 20 and 80 are being used for start and stop priority.
+# chkconfig <run levels> <start priority> <stop priority>
+# chkconfig: 2345 20 80
+# description: Provides USB redirection between endpoint devices and the virtual desktop.
+
+### LSB init script information required by debian
+### BEGIN INIT INFO
+# Provides:          vmwareusbd
+# Required-Start:    udev
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: VMWARE USB Service
+### END INIT INFO
+
+# Set a sane path
+export PATH=/bin:/usr/bin:/usr/sbin:/sbin
+
+# constants
+# The DAEMON variable gets updated at install time if it is not installed in the default location
+DAEMON=/usr/bin/vmware-view-usbd
+
+ECHO_CMD_NO_NL=printf
+
+INITLIB="NOT_FOUND"
+
+# Init functions locations for different systems
+LSB_INIT_FUNCTIONS=/lib/lsb/init-functions
+
+# If /lib/lsb/init-functions is present use the LSB init fuctions.
+if [ -r "$LSB_INIT_FUNCTIONS" ]; then
+	. "$LSB_INIT_FUNCTIONS"
+	INITLIB="$LSB_INIT_FUNCTIONS"
+fi
+
+
+# parse arguments
+case "$1" in
+    start)
+        cd /usr/lib
+        vmware-usbarbitrator
+        vmware-view-usbd
+        ;;
+
+    stop)
+        killall -9 vmware-usbarbitrator vmware-view-usbd
+        ;;
+
+    restart)
+        stop
+        start
+        ;;
+
+    *)
+        echo "usage: `basename "$0"` { start | stop | restart }" >&2
+        exit 1
+        ;;
+esac
+
+exit 0
+

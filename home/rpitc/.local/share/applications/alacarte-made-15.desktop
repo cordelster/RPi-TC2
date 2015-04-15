@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=VNCServer Password Changer
+Exec=/opt/scripts/vncpasswdchanger.sh
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

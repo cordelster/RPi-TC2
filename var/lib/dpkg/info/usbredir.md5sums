@@ -1,0 +1,13 @@
+0c9f851a260d55605ca3352db86828ef  usr/include/usbredirfilter.h
+f3256d3aeab6fee9af6c636d0e8f0e75  usr/include/usbredirhost.h
+77a5d0eb61fb53e32d70399e904478a4  usr/include/usbredirparser.h
+c760cfb72b1c079719c68e2c78c109d3  usr/include/usbredirproto.h
+7570dff8f487fd103beef79e049d867e  usr/lib/libusbredirhost.a
+3702f78fcd7be2c7ca07f570ce051008  usr/lib/pkgconfig/libusbredirhost.pc
+3c85066514f94e017c09cfebfaf54711  usr/lib/pkgconfig/libusbredirparser-0.5.pc
+40f49fe78c1f873449392415c3b84ae1  usr/lib/libusbredirparser.a
+880347482ea8aa2ecde2612706113048  usr/lib/libusbredirhost.so.1.0.0
+5344962e718afc66abfdebdfcaab3475  usr/lib/libusbredirparser.so.1.0.0
+ce6040d37414d37cc4c65eaeee6546bc  usr/lib/libusbredirparser.la
+a78f4e38656dbed62181ff42494bde36  usr/lib/libusbredirhost.la
+364f6265cdaa1847aab0eef620565b74  usr/sbin/usbredirserver

@@ -1,0 +1,2 @@
+#
+?package(menu): needs=x11 section="Internet" title="NoMachine" icon="/usr/NX/share/icons/48x48/NoMachine-icon.png"

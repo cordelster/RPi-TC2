@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Keep Me Up! (mousepad)
+Comment=Keep up your application/service
+Exec=/opt/scripts/keepmeup.sh mousepad /opt/README.txt
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=true
+

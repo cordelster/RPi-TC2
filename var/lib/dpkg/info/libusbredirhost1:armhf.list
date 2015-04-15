@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libusbredirhost.so.1.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libusbredirhost1
+/usr/share/doc/libusbredirhost1/changelog.gz
+/usr/share/doc/libusbredirhost1/changelog.Debian.gz
+/usr/share/doc/libusbredirhost1/copyright
+/usr/share/doc/libusbredirhost1/TODO
+/usr/share/doc/libusbredirhost1/README
+/usr/lib/arm-linux-gnueabihf/libusbredirhost.so.1

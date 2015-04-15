@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/cli-common
+/usr/share/cli-common/packages.d
+/usr/share/cli-common/packages.d/libdbus-glib2.0-cil.installcligac
+/usr/share/doc
+/usr/share/doc/libdbus-glib2.0-cil
+/usr/share/doc/libdbus-glib2.0-cil/copyright
+/usr/share/doc/libdbus-glib2.0-cil/changelog.Debian.gz
+/usr/lib
+/usr/lib/cli
+/usr/lib/cli/dbus-sharp-glib-2.0
+/usr/lib/cli/dbus-sharp-glib-2.0/dbus-sharp-glib.dll
+/usr/lib/cli/dbus-sharp-glib-2.0/dbus-sharp-glib.dll.config

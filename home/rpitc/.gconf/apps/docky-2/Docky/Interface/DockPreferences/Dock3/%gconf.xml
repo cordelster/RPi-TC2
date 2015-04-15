@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="ZoomPercent" mtime="1426094881" type="float" value="2"/>
+	<entry name="ZoomEnabled" mtime="1426094881" type="bool" value="true"/>
+	<entry name="ThreeDimensional" mtime="1426094881" type="bool" value="false"/>
+	<entry name="Launchers" mtime="1426094881" type="list" ltype="string">
+	</entry>
+	<entry name="IndicateMultipleWindows" mtime="1426094881" type="bool" value="true"/>
+	<entry name="IconSize" mtime="1426094881" type="int" value="48"/>
+	<entry name="HotAreaPadding" mtime="1426094881" type="int" value="24"/>
+	<entry name="FadeOpacity" mtime="1426094881" type="float" value="0"/>
+	<entry name="FadeOnHide" mtime="1426094881" type="bool" value="false"/>
+	<entry name="Autohide" mtime="1426094881" type="string">
+		<stringvalue>None</stringvalue>
+	</entry>
+	<entry name="Plugins" mtime="1426094881" type="list" ltype="string">
+	</entry>
+	<entry name="WindowManager" mtime="1426094881" type="bool" value="false"/>
+	<entry name="MonitorNumber" mtime="1426094881" type="int" value="0"/>
+	<entry name="Position" mtime="1426094872" type="string">
+		<stringvalue>Bottom</stringvalue>
+	</entry>
+	<entry name="SortList" mtime="1426094881" type="list" ltype="string">
+	</entry>
+</gconf>

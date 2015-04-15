@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libfreerdp-common1.1.0
+/usr/share/doc/libfreerdp-common1.1.0/copyright
+/usr/share/doc/libfreerdp-common1.1.0/changelog.gz
+/usr/share/doc/libfreerdp-common1.1.0/changelog.Debian.gz
+/usr/share/doc/libfreerdp-common1.1.0/README
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libfreerdp-common.so.1.1.0-beta1
+/usr/lib/arm-linux-gnueabihf/libfreerdp-common.so.1.1.0

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxcb-xf86dri0
+/usr/share/doc/libxcb-xf86dri0/changelog.Debian.armhf.gz
+/usr/share/doc/libxcb-xf86dri0/changelog.Debian.gz
+/usr/share/doc/libxcb-xf86dri0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxcb-xf86dri.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/libxcb-xf86dri.so.0

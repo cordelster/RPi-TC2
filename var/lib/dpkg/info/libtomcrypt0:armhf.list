@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libtomcrypt.so.0.0.117
+/usr/share
+/usr/share/doc
+/usr/share/doc/libtomcrypt0
+/usr/share/doc/libtomcrypt0/changelog.gz
+/usr/share/doc/libtomcrypt0/changelog.Debian.gz
+/usr/share/doc/libtomcrypt0/copyright
+/usr/lib/arm-linux-gnueabihf/libtomcrypt.so.0

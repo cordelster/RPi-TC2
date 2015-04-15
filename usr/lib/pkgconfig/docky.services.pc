@@ -1,0 +1,5 @@
+Name: Docky.Services
+Description: Docky services.
+Version: 0.1
+
+Libs: -r:/usr/lib/docky/Docky.Services.dll

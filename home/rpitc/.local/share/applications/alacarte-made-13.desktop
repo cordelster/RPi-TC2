@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=Edit Xephyr config
+Exec=mousepad /opt/config/xephyr.config
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm

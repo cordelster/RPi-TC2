@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Docky
+Type=Application
+Exec=docky
+Terminal=false
+Icon=docky
+Comment=Start Docky with RPiTC customizations
+NoDisplay=false
+Categories=Utility;
+Hidden=false
+

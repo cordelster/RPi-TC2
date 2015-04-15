@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/x3270if
+/usr/share
+/usr/share/man/man1
+/usr/share/man/man1/x3270if.1.gz
+/usr/share/man/man1/x3270-script.1.gz
+/usr/share/man/man5
+/usr/share/man/man5/ibm_hosts.5.gz
+/usr/share/doc
+/usr/share/doc/3270-common
+/usr/share/doc/3270-common/changelog.Debian.gz
+/usr/share/doc/3270-common/copyright
+/etc
+/etc/3270
+/etc/3270/ibm_hosts

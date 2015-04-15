@@ -1,0 +1,1 @@
+/tmp/.bash_history

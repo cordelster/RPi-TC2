@@ -1,0 +1,13 @@
+[Unit]
+Description=RPi-TC Hostname Setup
+DefaultDependencies=no
+After=local-fs-pre.target local-fs.target
+Before=sysinit.target
+ConditionPathIsReadWrite=/proc/sys/
+
+[Service]
+Type=simple
+ExecStart=/etc/init.d/hostname.sh
+
+[Install]
+WantedBy=multi-user.target

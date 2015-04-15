@@ -1,0 +1,5 @@
+Name: Docky.Items
+Description: Docky Items.
+Version: 0.1
+
+Libs: -r:/usr/lib/docky/Docky.Items.dll

@@ -1,0 +1,37 @@
+#!/bin/sh
+# -*- mode: shell-script; coding: utf-8 -*-
+#
+# Copyright 2002-2014 Cendio AB.
+# For more information, see http://www.cendio.com
+
+[ -h "$0" ] && ORIGIN=`ls -l "$0" | sed "s/.*-> //g"` || ORIGIN="$0"
+ORIGIN=`(cd "\`dirname \"$ORIGIN\"\`"; pwd -P 2>/dev/null || pwd)`
+
+TLCLIENT_PREFIX=`(cd "${ORIGIN}"; cd ..; pwd)`
+export TLCLIENT_PREFIX
+
+# Allow persistent settings on Dell Wyse Enhanced Ubuntu Linux
+if [ -d "/etc/wyseroot" ] && df -T "${HOME}" | grep -q tmpfs; then
+    mkdir -p "${HOME}/.thinlinc"
+    mkdir -p "/etc/wyseroot/.thinlinc"
+    if [ -h "${HOME}/.thinlinc/tlclient.conf" ]; then
+        :
+    else
+        # Migrate existing configuration
+        if [ -r "${HOME}/.thinlinc/tlclient.conf" ]; then
+            mv -f "${HOME}/.thinlinc/tlclient.conf" "/etc/wyseroot/.thinlinc"
+        fi
+        ln -s "/etc/wyseroot/.thinlinc/tlclient.conf" "${HOME}/.thinlinc/tlclient.conf"
+    fi
+fi
+
+"${ORIGIN}/../lib/tlclient/tlclient.bin" "$@"
+
+exitcode=$?
+if [ ${exitcode} -eq 126 ] || [ ${exitcode} -eq 127 ]; then
+    echo The execution of the ThinLinc client failed. A common reason for
+    echo this is that you are using the wrong architecture. Perhaps you
+    echo are running a 32 bit client on a 64 bit system without support
+    echo for 32 bit applications?
+fi
+exit ${exitcode}

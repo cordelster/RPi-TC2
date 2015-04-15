@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/x11vnc
+/usr/share
+/usr/share/man/man1
+/usr/share/man/man1/x11vnc.1.gz
+/usr/share/applications
+/usr/share/applications/x11vnc.desktop
+/usr/share/doc
+/usr/share/doc/x11vnc
+/usr/share/doc/x11vnc/changelog.Debian.armhf.gz
+/usr/share/doc/x11vnc/changelog.Debian.gz
+/usr/share/doc/x11vnc/changelog.gz
+/usr/share/doc/x11vnc/copyright
+/usr/share/doc/x11vnc/ChangeLog.gz
+/usr/share/doc/x11vnc/README.gz

@@ -1,0 +1,29 @@
+	*** How to patch kernel sources to add eveusb module inside kernel tree ***
+
+Assume you put kernel sources archive linux-2.6.38.tar.bz2 into eveusb/kernel/patch.
+
+tar xf linux-2.6.38.tar.bz2
+cd linux-2.6.38
+../patch_kernel $PWD # patch -p1 -i ../eveusb.patch
+svn export ../.. drivers/usb/misc/eveusb
+rm drivers/usb/misc/eveusb/usb_descr.* # broken symlinks
+cp ../../../daemon/shared/usb_descr.* drivers/usb/misc/eveusb
+
+Now you have a kernel sources with eveusb module inside kernel tree.
+
+------------------------------------------------------------------------------
+
+	*** What patches inside kernel ***
+
+drivers/usb/misc/Kconfig: line added
+source "drivers/usb/misc/eveusb/Kconfig"
+
+drivers/usb/misc/Makefile: line added
+obj-$(CONFIG_USB_ELTIMA_EVEUSB) += eveusb/
+
+To get patch for specific version of kernel sources your should copy unmodified sources linux-2.6.38 
+to linux-2.6.38.patched. Next modify these two files inside linux-2.6.38.patched and run
+diff -crB linux-2.6.38 linux-2.6.38.patched > eveusb.patch
+
+------------------------------------------------------------------------------
+

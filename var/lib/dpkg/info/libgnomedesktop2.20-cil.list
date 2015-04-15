@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/cli-common
+/usr/share/cli-common/packages.d
+/usr/share/cli-common/packages.d/libgnomedesktop2.20-cil.installcligac
+/usr/share/doc
+/usr/share/doc/libgnomedesktop2.20-cil
+/usr/share/doc/libgnomedesktop2.20-cil/copyright
+/usr/share/doc/libgnomedesktop2.20-cil/changelog.gz
+/usr/share/doc/libgnomedesktop2.20-cil/changelog.Debian.gz
+/usr/lib
+/usr/lib/cli
+/usr/lib/cli/gnomedesktop-sharp-2.20
+/usr/lib/cli/gnomedesktop-sharp-2.20/gnomedesktop-sharp.dll
+/usr/lib/cli/gnomedesktop-sharp-2.20/gnomedesktop-sharp.dll.config

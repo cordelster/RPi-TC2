@@ -1,0 +1,17 @@
+/.
+/etc
+/etc/NX
+/etc/NX/player
+/etc/NX/player/localhost
+/etc/NX/player/localhost/player.cfg.sample
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/nomachine
+/usr/share/doc/nomachine/changelog.Debian.gz
+/usr/share/doc/nomachine/copyright
+/usr/share/NX
+/usr/share/NX/packages
+/usr/share/NX/packages/player
+/usr/share/NX/packages/player/nxplayer.tar.gz
+/usr/share/NX/packages/player/nxclient.tar.gz

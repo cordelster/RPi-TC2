@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Comment=NoMachine recording
+Exec="/usr/NX/bin/nxplayer" --recording
+Icon=NoMachine-recording
+Name=NoMachine Player
+Type=Application
+MimeType=application/nx-recording
+NoDisplay=true

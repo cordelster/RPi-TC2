@@ -1,0 +1,8 @@
+cbe7d02f46fad60de8be7466565f230d  usr/lib/arm-linux-gnueabihf/libQtNetwork.so.4.8.6
+9fa6a89a7531e07def15f152d307429d  usr/lib/arm-linux-gnueabihf/qt4/plugins/bearer/libqconnmanbearer.so
+85df201239b64475b5d1877dc96a7926  usr/lib/arm-linux-gnueabihf/qt4/plugins/bearer/libqgenericbearer.so
+711931e664c535f944f415f7e6793285  usr/lib/arm-linux-gnueabihf/qt4/plugins/bearer/libqnmbearer.so
+eb6c371255e1262c55ae9b652a90b528  usr/share/doc/libqt4-network/LGPL_EXCEPTION.txt
+9e46204f5660689e18bca6b25ce9d70d  usr/share/doc/libqt4-network/changelog.Debian.gz
+d49cf542b1b3ba75bad90e9560c459d3  usr/share/doc/libqt4-network/copyright
+5841018376fa976a03dc54ea98a6eeeb  usr/share/lintian/overrides/libqt4-network

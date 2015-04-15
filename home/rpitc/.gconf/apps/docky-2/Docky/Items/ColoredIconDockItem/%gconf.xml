@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="MountItem__media_usb1" mtime="1426184894" type="int" value="0"/>
+	<entry name="MountItem__media_usb0" mtime="1427747458" type="int" value="0"/>
+	<entry name="file____home_rpitc" mtime="1429029898" type="int" value="0"/>
+	<entry name="file____home_rpitc_Desktop" mtime="1423423809" type="int" value="0"/>
+	<entry name="DockyItem" mtime="1429029897" type="int" value="0"/>
+</gconf>

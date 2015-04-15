@@ -1,0 +1,43 @@
+#!/bin/sh
+
+# These scripts were designed for RPM so arguments need to be
+# adjusted to work with dpkg.
+
+# FIXME: dpkg doesn't run postinst differently for upgrades
+case $1 in
+    "configure")
+        set 1
+        ;;
+    *)
+        exit 1
+        ;;
+esac
+
+# Some distributions aren't consistent in what these are set to, so clear them
+unset XDG_CONFIG_DIRS XDG_DATA_DIRS
+export PATH=$PATH:/opt/thinlinc/lib/tlclient/xdg-utils
+mkdir -p /usr/share/desktop-directories /usr/share/icons/hicolor
+xdg-desktop-menu install /opt/thinlinc/lib/tlclient/thinlinc-client.desktop
+xdg-icon-resource install --noupdate --size 16 --context apps      /opt/thinlinc/lib/tlclient/tlclient_16.png thinlinc-client
+xdg-icon-resource install --noupdate --size 16 --context mimetypes /opt/thinlinc/lib/tlclient/tlclient_16.png application-vnd.cendio.thinlinc.clientconf
+xdg-icon-resource install --noupdate --size 24 --context apps      /opt/thinlinc/lib/tlclient/tlclient_24.png thinlinc-client
+xdg-icon-resource install --noupdate --size 24 --context mimetypes /opt/thinlinc/lib/tlclient/tlclient_24.png application-vnd.cendio.thinlinc.clientconf
+xdg-icon-resource install --noupdate --size 48 --context apps      /opt/thinlinc/lib/tlclient/tlclient_48.png thinlinc-client
+xdg-icon-resource install --noupdate --size 48 --context mimetypes /opt/thinlinc/lib/tlclient/tlclient_48.png application-vnd.cendio.thinlinc.clientconf
+# xdg-utils does not support SVG yet
+[ -d /usr/share/icons/hicolor/scalable/apps ] && rm -f /usr/share/icons/hicolor/scalable/apps/thinlinc-client.svg && ln -s /opt/thinlinc/lib/tlclient/tlclient.svg /usr/share/icons/hicolor/scalable/apps/thinlinc-client.svg
+xdg-icon-resource forceupdate
+xdg-mime install /opt/thinlinc/lib/tlclient/thinlinc-client-mime.xml
+# Manticore (HP) support
+if [ -d /usr/share/manticore/plugins ]; then
+    rm -rf /usr/share/manticore/plugins/thinlinc && ln -s /opt/thinlinc/lib/tlclient/manticore /usr/share/manticore/plugins/thinlinc
+    if type mclient 2>/dev/null >/dev/null; then
+        mclient create root/ConnectionType/thinlinc/connections/dummy
+        mclient delete root/ConnectionType/thinlinc/connections/dummy
+        mclient commit
+    fi
+fi
+if [ -e /etc/SysInfo/pkg_list.conf ]; then
+    grep -q thinlinc-client /etc/SysInfo/pkg_list.conf || echo thinlinc-client >> /etc/SysInfo/pkg_list.conf
+fi
+exit 0

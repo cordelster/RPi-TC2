@@ -1,0 +1,8 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=Edit dFreeRDP cmd line
+Exec=mousepad /usr/share/applications/dFreeRDP.desktop
+Type=Application
+Icon=/usr/share/pixmaps/mousepad.xpm
+Hidden=true

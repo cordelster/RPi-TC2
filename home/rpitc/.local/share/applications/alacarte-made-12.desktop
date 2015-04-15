@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=Florence Virtual Keyboard
+Terminal=false
+Name=Florence Virtual Keyboard
+Exec=florence
+Type=Application
+Icon=/usr/share/pixmaps/florence.svg

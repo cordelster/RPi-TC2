@@ -1,0 +1,90 @@
+#!/bin/sh
+# -*- mode: shell-script; coding: utf-8 -*-
+#
+# Copyright 2002-2014 Cendio AB.
+# For more information, see http://www.cendio.com
+#
+# This script is automaticly launched by Manticore Middleware Connection Manager
+#
+# This script is launched with 2 args
+# $1 = start | stop
+# $2 = ID
+
+[ -h "$0" ] && ORIGIN=`ls -l "$0" | sed "s/.*-> //g"` || ORIGIN="$0"
+ORIGIN=`(cd "\`dirname \"$ORIGIN\"\`"; pwd -P 2>/dev/null || pwd)`
+
+usage() {
+    echo "Usage: $0 <start|stop> {UUID}"
+    exit 1
+}
+
+if [ $# -ne 2 ]; then
+    usage;
+    exit 1
+fi
+
+# Retrieve ${PRODUCT_CONFIG} etc
+. /etc/systeminfo
+
+UUID="$2"
+CONNECTION_ROOT="root/ConnectionType/thinlinc/connections/${UUID}"
+ADDRESS=`mclient --quiet get ${CONNECTION_ROOT}/address`
+PORT=`mclient --quiet  get ${CONNECTION_ROOT}/port`
+
+if [ "${ADDRESS}" ]; then
+    if nc -z ${ADDRESS} ${PORT} -w 4; then
+        true
+    else
+        exit 1
+    fi
+fi
+
+if [ -f "/tmp/${UUID}.login" ] && [ -s "/tmp/${UUID}.login" ]; then
+    eval "$(process-credential -i "/tmp/${UUID}.login" -o - -m d)"
+    USERNAME="${default_username}"
+    PSW="${default_password}"
+    DOMAIN="${default_domain}"
+    SMART_CARD="${default_smartcard}"
+else
+    USERNAME="$(mclient --quiet get ${CONNECTION_ROOT}/username)"
+    PSW="$(mclient --quiet get ${CONNECTION_ROOT}/password)"
+    DOMAIN="$(mclient --quiet get ${CONNECTION_ROOT}/domain)"
+    SMART_CARD="$(mclient --quiet get ${CONNECTION_ROOT}/smartcard)"
+fi
+if [ -n "${DOMAIN}" ] && [ -n "${USERNAME}" ]; then
+    USERNAME="${DOMAIN}\\${USERNAME}"
+fi
+if [ -n "${USERNAME}" ]; then
+    UARG="-u"
+fi
+if [ -n "${PSW}" ]; then
+    PARG="-p"
+fi
+
+if [ "${PRODUCT_CONFIG}" = "zero" ]; then
+    mkdir -p ~/.thinlinc
+    if [ "${SMART_CARD}" = "1" ]; then
+        echo "AUTHENTICATION_METHOD=scpublickey" >> ~/.thinlinc/tlclient.conf
+    else
+        echo "AUTHENTICATION_METHOD=password" >> ~/.thinlinc/tlclient.conf
+    fi
+else
+# Manticore has built in functionality for looping the client:
+# "autoReconnect". Unfortunately, it doesn't work very well: After
+# Connecting, the application will run forever. Pressing "Disconnect"
+# merely terminates the current instance; a new one will then
+# launch. The only way of stopping the application is to edit the
+# connection properties while the application is running and disable
+# the autoReconnect functionality, then Disconnect. Unfortunately,
+# since we are not yet providing a GUI for editing properties, this is
+# impractical. Note that it is also impossible to delete an active
+# connection. So instead, on standard ThinPro, we are using our own
+# loop mode.
+    OPTIONS="${OPTIONS} --loop"
+fi
+
+case $1 in
+    start) 
+    exec ${ORIGIN}/../../../bin/tlclient ${UARG} "${USERNAME}" ${PARG} "${PSW}" ${OPTIONS} ${ADDRESS}:${PORT}
+    ;;
+esac

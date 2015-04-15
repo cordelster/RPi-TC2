@@ -1,0 +1,12 @@
+ID_VERSION=13.1.3.305346
+DISP_VERSION=13.1.3
+CHANGE_NO=305346
+ID_PRODUCT_NAME=CitrixICAClient
+DISP_PRODUCT_NAME=Citrix Receiver for Linux
+uname=Linux rpitc-fd061ded 3.18.10-v7+ #774 SMP PREEMPT Wed Mar 25 14:10:30 GMT 2015 armv7l GNU/Linux
+PORT=linuxarmhf
+LANGUAGE=*
+date=20150330202321 CEST
+INFO_FILE=Debian_installation
+DATA_FILE=Debian_package
+BROWSER_DIR=/usr/lib/mozilla

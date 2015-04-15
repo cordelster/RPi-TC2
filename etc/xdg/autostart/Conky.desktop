@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Conky and NTP
+Comment=Start Conky and update Time
+Exec=/home/rpitc/.start-conky 2.de.pool.ntp.org
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false
+

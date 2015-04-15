@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+dpkg-maintscript-helper rm_conffile /etc/vpnc/example.conf 0.5.3r449-3 -- "$@"
+dpkg-maintscript-helper rm_conffile /etc/vpnc/vpnc-script 0.5.3r550-1~ -- "$@"
+
+# move user-created connect-action scripts to the new hook directories, if any
+[ -f /etc/vpnc/vpnc-script-connect-action ] && [ ! -f /etc/vpnc/connect.d/vpnc-script-connect-action ] \
+    && mkdir -vp /etc/vpnc/connect.d \
+    && mv -v /etc/vpnc/vpnc-script-connect-action /etc/vpnc/connect.d/
+[ -f /etc/vpnc/vpnc-script-post-connect-action ] && [ ! -f /etc/vpnc/post-connect.d/vpnc-script-post-connect-action ] \
+    && mkdir -vp /etc/vpnc/post-connect.d \
+    && mv -v /etc/vpnc/vpnc-script-post-connect-action /etc/vpnc/post-connect.d/
+[ -f /etc/vpnc/vpnc-script-disconnect-action ] && [ ! -f /etc/vpnc/disconnect.d/vpnc-script-disconnect-action ] \
+    && mkdir -vp /etc/vpnc/disconnect.d \
+    && mv -v /etc/vpnc/vpnc-script-disconnect-action /etc/vpnc/disconnect.d/
+[ -f /etc/vpnc/vpnc-script-post-disconnect-action ] && [ ! -f /etc/vpnc/post-disconnect.d/vpnc-script-post-disconnect-action ] \
+    && mkdir -vp /etc/vpnc/post-disconnect.d \
+    && mv -v /etc/vpnc/vpnc-script-post-disconnect-action /etc/vpnc/post-disconnect.d/
+
+
+
+exit 0
